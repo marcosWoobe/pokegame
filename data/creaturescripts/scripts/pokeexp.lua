@@ -14,7 +14,6 @@ local function playerAddExp(cid, exp)
         vipexp = 1.1 -- 10% a mais | 1.2 = 20%
     end
 
-	vipexp = vipexp*0.4
     local Tiers = { 
         [71] = {bonus = Exp1},  
         [72] = {bonus = Exp2},
@@ -29,19 +28,19 @@ local function playerAddExp(cid, exp)
         local Tier = getItemAttribute(ball.uid, "heldx") 
         if Tier and Tier > 70 and Tier < 78 then
 		    
-            doPlayerAddExp(cid, math.floor(((exp * Tiers[Tier].bonus) * vipexp)) * doublexp)
-	        doSendAnimatedText(getThingPos(cid), math.floor(((exp * Tiers[Tier].bonus) * vipexp) * doublexp), 215)
-            sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * Tiers[Tier].bonus) * vipexp) * doublexp).." Pontos de Experi�ncia.")
+            doPlayerAddExp(cid, math.floor((((exp * Tiers[Tier].bonus) * vipexp)) * doublexp) / 3)
+	        doSendAnimatedText(getThingPos(cid), math.floor((((exp * Tiers[Tier].bonus) * vipexp) * doublexp)/3), 215)
+            sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor((((exp * Tiers[Tier].bonus) * vipexp) * doublexp)/3).." Pontos de Experi�ncia.")
 		else
-            doPlayerAddExp(cid, math.floor((exp * vipexp)) * doublexp)
+            doPlayerAddExp(cid, math.floor(((exp * vipexp)) * doublexp)/3)
             --print(math.floor((exp * vipexp)) * doublexp)
-	        doSendAnimatedText(getThingPos(cid), math.floor((exp * vipexp) * doublexp), 215)
-			sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor((exp * vipexp) * doublexp).." Pontos de Experi�ncia.")
+	        doSendAnimatedText(getThingPos(cid), math.floor(((exp * vipexp) * doublexp)/3), 215)
+			sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * vipexp) * doublexp)/3).." Pontos de Experi�ncia.")
         end 
 	else
-	    doPlayerAddExp(cid, math.floor((exp * vipexp)) * doublexp)
-	    doSendAnimatedText(getThingPos(cid), math.floor((exp * vipexp) * doublexp), 215)
-		sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor((exp * vipexp) * doublexp).." Pontos de Experi�ncia.")
+	    doPlayerAddExp(cid, math.floor(((exp * vipexp)) * doublexp)/3)
+	    doSendAnimatedText(getThingPos(cid), math.floor(((exp * vipexp) * doublexp)/3), 215)
+		sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * vipexp) * doublexp)/3).." Pontos de Experi�ncia.")
 	end
 end
 
