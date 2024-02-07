@@ -12,6 +12,8 @@ local function playerAddExp(cid, exp)
     if isPremium(cid) then
         vipexp = 1.1 -- 10% a mais | 1.2 = 20%
     end
+
+	vipexp = vipexp*0.4
     local Tiers = { 
         [71] = {bonus = Exp1},  
         [72] = {bonus = Exp2},
