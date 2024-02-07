@@ -13,6 +13,8 @@ local function playerAddExp(cid, exp)
     if isPremium(cid) then
         vipexp = 1.1 -- 10% a mais | 1.2 = 20%
     end
+
+	vipexp = vipexp*0.4
     local Tiers = { 
         [71] = {bonus = Exp1},  
         [72] = {bonus = Exp2},
@@ -29,17 +31,17 @@ local function playerAddExp(cid, exp)
 		    
             doPlayerAddExp(cid, math.floor(((exp * Tiers[Tier].bonus) * vipexp)) * doublexp)
 	        doSendAnimatedText(getThingPos(cid), math.floor(((exp * Tiers[Tier].bonus) * vipexp) * doublexp), 215)
-            sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Você ganhou "..math.floor(((exp * Tiers[Tier].bonus) * vipexp) * doublexp).." Pontos de Experiência.")
+            sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Vocï¿½ ganhou "..math.floor(((exp * Tiers[Tier].bonus) * vipexp) * doublexp).." Pontos de Experiï¿½ncia.")
 		else
             doPlayerAddExp(cid, math.floor((exp * vipexp)) * doublexp)
             --print(math.floor((exp * vipexp)) * doublexp)
 	        doSendAnimatedText(getThingPos(cid), math.floor((exp * vipexp) * doublexp), 215)
-			sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Você ganhou "..math.floor((exp * vipexp) * doublexp).." Pontos de Experiência.")
+			sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Vocï¿½ ganhou "..math.floor((exp * vipexp) * doublexp).." Pontos de Experiï¿½ncia.")
         end 
 	else
 	    doPlayerAddExp(cid, math.floor((exp * vipexp)) * doublexp)
 	    doSendAnimatedText(getThingPos(cid), math.floor((exp * vipexp) * doublexp), 215)
-		sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Você ganhou "..math.floor((exp * vipexp) * doublexp).." Pontos de Experiência.")
+		sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Vocï¿½ ganhou "..math.floor((exp * vipexp) * doublexp).." Pontos de Experiï¿½ncia.")
 	end
 end
 
