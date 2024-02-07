@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<outfits>
+<!-- ADDONS -->
+<outfit id="1" quest="80590">
+<list type="0" lookType="1911" name="Battle Armor"/>
+</outfit>
+
+<outfit id="2" quest="80591">
+<list type="0" lookType="1896" name="Charizard"/>
+</outfit>
+
+<outfit id="3" quest="80592">
+<list type="0" lookType="1883" name="Thor Costume"/>
+</outfit>
+
+<outfit id="4" quest="80593">
+<list type="0" lookType="1956" name="Fire Samurai Armor"/>
+</outfit>
+
+<outfit id="5" quest="80594">
+<list type="0" lookType="1960" name="Spikes"/>
+</outfit>
+
+<outfit id="6" quest="80595">
+<list type="0" lookType="1961" name="Joker Costume"/>
+</outfit>
+
+<outfit id="7" quest="80596">
+<list type="0" lookType="1957" name="Thunder Samurai Armor"/>
+</outfit>
+
+<outfit id="8" quest="80596">
+<list type="0" lookType="1958" name="vapo"/>
+</outfit>
+
+<outfit id="9" quest="80596">
+<list type="0" lookType="1885" name="Batsuit"/>
+</outfit>
+
+<outfit id="10" quest="80596">
+<list type="0" lookType="1965" name="Mechanical Clothes"/>
+</outfit>
+	
+
+
+</outfits>

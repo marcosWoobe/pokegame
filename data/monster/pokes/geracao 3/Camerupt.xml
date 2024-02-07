@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Camerupt" nameDescription="a camerupt" race="fire" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1791" head="65" body="90" legs="95" feet="113" corpse="14766"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+	   <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Rock Throw" interval="2250" chance="25" range="2"/>
+        <attack name="Ember" interval="2500" chance="25" range="4"/>
+        <attack name="Mud Bomb" interval="2750" chance="25" range="6"/>
+        <attack name="Flame Burst" interval="3000" chance="25" range="1"/>
+        <attack name="Lava Plume" interval="3250" chance="25" range="5"/>
+        <attack name="Earthquake" interval="3500" chance="25" range="4"/>
+        <attack name="Fissure" interval="3750" chance="25" range="6"/>
+        <attack name="Scary Face" interval="4000" chance="25" range="6"/>
+
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Kirlia!"/>
+    </voices>
+    <loot>
+        <item id="15100" chance="35" countmax="1"/> <!-- nu ball -->
+        <item id="15101" chance="35" countmax="1"/> <!-- mini volcano -->
+        <item id="12152" chance="35" countmax="1"/> <!-- pot of lava -->
+        <item id="12337" chance="80" countmax="40"/> <!-- small stone -->
+        <item id="12162" chance="80" countmax="40"/> <!-- essence of fire -->
+        <item id="11447" chance="15" countmax="1"/> <!-- fire stone -->
+        <item id="11445" chance="15" countmax="1"/> <!-- rock stone -->	
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sceptile" nameDescription="a sceptile" race="grass" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1728" head="65" body="90" legs="95" feet="113" corpse="14139"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+		<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+		<attack name="Quick Attack" interval="2250" chance="25" range="2"/>
+        <attack name="Leaf Blade" interval="2500" chance="25" range="4"/>
+        <attack name="Magical Leaf" interval="2750" chance="25" range="6"/>
+        <attack name="Fury Cutter" interval="3000" chance="25" range="1"/>
+        <attack name="Night Slash" interval="3500" chance="25" range="4"/>
+        <attack name="X-Scissor" interval="3750" chance="25" range="6"/>
+        <attack name="Dual Chop" interval="4000" chance="25" range="6"/>
+		<attack name="Frenzy Plant" interval="4250" chance="25" range="6"/>
+		<attack name="Agility" interval="4500" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Sceptile!"/>
+    </voices>
+    <loot>
+        <item id="12163" chance="80" countmax="43"/> <!-- seed -->
+        <item id="12155" chance="35" count="1" countmax="1"/> <!-- pair of leaves -->
+        <item id="15081" chance="35" count="1" countmax="1"/> <!-- greens -->		
+        <item id="11441" chance="17" count="1" countmax="1"/> <!-- leaf stone -->	
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

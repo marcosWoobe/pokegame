@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shiny Mantine" nameDescription="a shiny mantine" race="water" experience="1100" speed="247" manacost="0">
+    <health now="170" max="170"/>
+  <look type="930" head="70" body="90" legs="95" feet="113" corpse="14014"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Headbutt" interval="2805" chance="29" range="1"/>
+        <attack name="Bubbles" interval="2852" chance="29" range="3"/>
+        <attack name="Water Gun" interval="2946" chance="28" range="6"/>
+        <attack name="Water Pulse" interval="2899" chance="29" range="5"/>
+        <attack name="Whirlwind" interval="3040" chance="28" range="6"/>
+        <attack name="Hydro Cannon" interval="3604" chance="24" range="5"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+<voices interval="5000" chance="10">
+	<voice sentence="MAAAN!"/>
+<voice sentence="TIINE!"/>
+<voice sentence="MANTINE!"/>
+  </voices>     
+   <loot>
+        <item id="12161" chance="80" countmax="30"/> <!-- water gem -->
+        <item id="12170" chance="35" count="1" countmax="1"/> <!-- water pendant -->
+        <item id="11442" chance="30" count="1" countmax="1"/> <!-- water stone --> 
+        <item id="12283" chance="35" count="1" countmax="1"/>  <!-- water orb -->
+        <item id="13878" chance="35" count="1" countmax="1"/> <!-- streak tail -->
+        <item id="12401" chance="0.1" count="1"/> <!-- shiny stone -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

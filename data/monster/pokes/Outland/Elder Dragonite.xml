@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elder Dragonite" nameDescription="an Elder Dragonite" race="dragon" experience="1536" speed="107" manacost="0">
+    <health now="270" max="270"/>
+    <look type="1343" head="90" body="100" legs="95" feet="113" corpse="11865"/>
+    <targetchange interval="10000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        <flag hungerdelay="12"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1000" chance="100" range="1" min="-50" max="-100"/>
+		<attack name="Headbutt" interval="1000" chance="20" range="1"/>
+		<attack name="Aqua Tail" interval="1000" chance="20" range="1"/>
+		<attack name="Thunder Wave" interval="2000" chance="15" range="9"/>
+		<attack name="Thunder Punch" interval="1000" chance="20" range="1"/>
+		<attack name="Fire Punch" interval="1000" chance="20" range="1"/>
+		<attack name="Dragon Claw" interval="1000" chance="20" range="1"/>
+		<attack name="Dragon Breath" interval="1000" chance="20" range="9"/>
+		<attack name="Twister" interval="2000" chance="15" range="9"/>
+		<attack name="Wing Attack" interval="1000" chance="20" range="9"/>
+		<attack name="Hyper Beam" interval="2000" chance="15" range="9"/>
+		<attack name="Draco Meteor" interval="2000" chance="15" range="9"/>
+    </attacks>
+     <defenses armor="0" defense="0">
+	</defenses>
+    <voices interval="5000" chance="10">
+        <voice sentence="DRAGONITE!"/>
+    </voices>
+    <loot>
+        <item id="11449" chance="70" countmax="1"/>
+        <item id="12159" chance="3000" countmax="2"/>
+        <item id="12989" chance="1" countmax="1"/> <!-- mighty token -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

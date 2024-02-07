@@ -1,0 +1,85 @@
+[15/07/2018 22:31:29] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[15/07/2018 22:32:28] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[15/07/2018 22:37:01] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[27/10/2018 16:32:55] (Error - void ServicePort::open(uint16_t)) NETWORK: Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso
+[27/10/2018 16:33:41] (Error - void ServicePort::open(uint16_t)) NETWORK: Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso
+[30/10/2018 17:37:22] (Error - void ServicePort::open(uint16_t)) NETWORK: Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso
+[05/11/2018 19:39:25] (Error - void ServicePort::open(uint16_t)) NETWORK: Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso
+[05/11/2018 19:40:19] (Error - void ServicePort::open(uint16_t)) NETWORK: Foi feita uma tentativa de acesso a um soquete de uma maneira que é proibida pelas permissões de acesso
+[26/02/2020 00:17:47] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:17:53] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:17:57] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:18:11] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:18:17] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:18:21] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:18:26] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:18:35] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:20] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:25] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:30] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:35] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:41] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:46] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:51] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:38:56] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:01] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:06] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:12] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:17] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:21] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:27] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:32] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[26/02/2020 00:39:37] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:22:34] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:22:39] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:22:45] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:22:50] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:22:55] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:00] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:05] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:10] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:15] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:20] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:25] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:23:30] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:26:48] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:26:53] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:26:57] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[29/02/2020 13:27:02] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: 
+[24/06/2020 13:42:53] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Saymon sent unknown byte: 0x7ffe9d1747b8
+
+[24/06/2020 13:43:08] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Saymon sent unknown byte: 0x7ffe9d1747b8
+
+[24/06/2020 18:48:22] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[24/06/2020 18:49:20] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[29/06/2020 14:33:26] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Saymon sent unknown byte: 0x7ffe91aa8508
+
+[29/06/2020 14:48:33] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Saymon sent unknown byte: 0x7ffe91aa8508
+
+[19/07/2020 23:59:56] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[04/08/2020 00:12:01] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[15/09/2020 13:29:34] (Error - void ServicePort::open(uint16_t)) NETWORK: bind: Address already in use
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xa9
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xc5
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0xbb
+
+[12/06/2022 22:07:42] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0x39
+
+[12/06/2022 22:07:43] (Notice - virtual void ProtocolGame::parsePacket(NetworkMessage&)) PLAYER: Noob sent unknown byte: 0x39
+

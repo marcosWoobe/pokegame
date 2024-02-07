@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Joseph" script="catchToken.lua" walkinterval="350000" floorchange="0" speed="0">
+    <health now="150" max="150"/>
+    <look type="331" head="50" body="32" legs="135" feet="41"/>
+
+<parameters>
+	<parameter key="message_greet" value="Olá |PLAYERNAME|, deseja {trocar} os seus Catcher Token por diversos tipos de items?."/>
+	<parameter key="message_farewell" value="Até mais!"/>
+	<parameter key="message_idletimeout" value="Até mais!"/>
+	<parameter key="message_walkaway" value="Até mais!"/>	
+</parameters>
+	
+</npc>

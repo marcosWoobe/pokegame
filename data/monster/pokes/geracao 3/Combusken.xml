@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Combusken" nameDescription="a combusken" race="fire" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1733" head="65" body="90" legs="95" feet="113" corpse="14094"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+	   <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Quick Attack" interval="2250" chance="25" range="2"/>
+        <attack name="Ember" interval="2500" chance="25" range="4"/>
+        <attack name="Mega Kick" interval="2750" chance="25" range="6"/>
+        <attack name="Fire Punch" interval="3000" chance="25" range="1"/>
+        <attack name="Blaze Kick" interval="3250" chance="25" range="5"/>
+        <attack name="Flare Blitz" interval="3500" chance="25" range="4"/>
+        <attack name="Sky Uppercut" interval="3750" chance="25" range="6"/>
+        <attack name="Bulk Up" interval="4000" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Combusken!"/>
+    </voices>
+    <loot>
+
+        <item id="12162" chance="80" countmax="22"/> <!-- essence of fire -->
+        <item id="17346" chance="80" countmax="22"/> <!-- band aid -->
+        <item id="12152" chance="35" count="1" countmax="1"/> <!-- pot of lava -->
+        <item id="15082" chance="35" count="1" countmax="1"/> <!-- fire feather -->		
+        <item id="11447" chance="17" count="1" countmax="1"/> <!-- fire stone -->		
+        <item id="11446" chance="17" count="1" countmax="1"/> <!-- punch stone -->		
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

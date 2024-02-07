@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<npc name="Kendall" script="Kendall.lua" walkinterval="3000" floorchange="0" speed="50">
+<health now="1500" max="1500"/>
+<look type="1697" head="114" body="119" legs="114" feet="114" corpse="3058"/>
+
+<parameters>
+<parameter key="message_greet" value="Hello dear customer! Come on, lets {task}!"/>
+</parameters>
+</npc>

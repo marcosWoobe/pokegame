@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Parasect" nameDescription="a parasect" race="bug" experience="250" speed="221" manacost="0">
+    <health now="1100" max="1100"/>
+    <look type="446" head="45" body="65" legs="95" feet="113" corpse="11936"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Scratch" interval="2570" chance="31" range="1"/>
+		<attack name="Poison Sting" interval="2805" chance="28" range="7"/>
+        <attack name="Sleep Powder" interval="5164" chance="10" range="2"/>
+        <attack name="Stun Spore" interval="4920" chance="10" range="6"/>
+        <attack name="Poison Powder" interval="2946" chance="18" range="3"/>
+		<attack name="Absorb" interval="3405" chance="29" range="1"/>
+		<attack name="Acid Bomb" interval="2805" chance="22" range="8"/>
+		<attack name="Fury Cutter" interval="4105" chance="27" range="3"/>
+		<attack name="X-Scissor" interval="3605" chance="17" range="4"/>
+    </attacks>
+    <defenses armor="0" defense="0">
+	</defenses>
+    <voices interval="5000" chance="10">
+        <voice sentence="PARASECT!"/>
+    </voices>
+    <loot>
+        <item id="12171" chance="35" count="1" countmax="2"/> <!-- pot of moss bug -->
+        <item id="12163" chance="80" count="1" countmax="15"/> <!-- seed -->
+        <item id="12183" chance="35" count="1" countmax="1"/> <!-- some mushroom --> 
+        <item id="12153" chance="35" count="1" countmax="1"/> <!-- bag of pollem --> 		
+		<item id="13783" chance="80" countmax="15"/> <!-- bug gosme -->
+        <item id="11448" chance="15" count="1" countmax="1"/> <!-- coccon stone -->
+        <item id="11441" chance="15" count="1" countmax="1"/> <!-- leaf stone -->		
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

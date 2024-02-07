@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shiny Hitmonchan" nameDescription="a Shiny hitmonchan" race="fighting" experience="824" speed="307" manacost="0">
+  <health now="180" max="180"/>
+  <look type="837" head="75" body="80" legs="95" feet="113" corpse="12527"/>
+  <targetchange interval="1000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+<flags>
+ <flag summonable="1"/>
+ <flag attackable="1"/>
+ <flag hostile="1"/>
+ <flag illusionable="1"/>
+ <flag convinceable="1"/>
+ <flag pushable="1"/>
+ <flag canpushitems="0"/>
+ <flag canpushcreatures="0"/>
+ <flag targetdistance="1"/>
+ <flag staticattack="97"/>
+ <flag runonhealth="0"/>
+
+</flags>
+
+<attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+	<attack name="Mega Punch" interval="2928" chance="70" range="1"/>
+        <attack name="Triple Punch" interval="2446" chance="70" range="1"/>
+        <attack name="Multi-Punch" interval="3322" chance="70" range="4"/>
+        <attack name="Ultimate Champion" interval="4356" chance="70" range="6"/>
+
+	<attack name="Demon Puncher" interval="1000" chance="100" range="1"/>
+</attacks>
+
+
+<defenses armor="0" defense="0">
+</defenses>
+
+ <voices interval="5000" chance="10">
+ <voice sentence="HITMONCHAN!"/>
+ </voices>
+
+  <loot>
+    <item id="11446" chance="30" count="1" countmax="1"/> <!-- punch stone -->
+    <item id="17346" chance="80" countmax="30"/> <!-- band aid -->  
+    <item id="17305" chance="35" count="1"/> <!-- spin machine -->  
+    <item id="2345" chance="25" count="1"/> <!-- martial scrolls -->
+  	<item id="12401" chance="0.1" count="1"/> <!-- shiny stone -->
+  </loot>
+
+<script>
+  <event name="Spawn"/> 
+</script>
+</monster>

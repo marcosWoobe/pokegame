@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Leona" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="150" max="150"/>
+	<look type="495" head="13" body="41" legs="246" feet="26"/>
+</npc>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Hugh" script="default.lua" walkinterval="350000" floorchange="0" speed="0">
+<health now="150" max="150"/>
+<look type="523" head="91" body="114" legs="86" feet="0"/>
+<parameters>
+<parameter key="message_greet" value="Hello dear customer! I buy rare items from Pokemon, Want to see my offers? Come on, let {trade}!"/>
+<parameter key="message_farewell" value="Good bye!"/>
+<parameter key="message_idletimeout" value="Good bye!"/>
+<parameter key="message_walkaway" value="Good bye!"/>
+<parameter key="module_shop" value="1"/>
+<parameter key="shop_sellable" value="
+armadillo claw,17321,147;
+bat wing,5894,78.00;
+bear paw,17292,204;
+bee sting,17315,54;
+belt of champion,12195,1000;
+blue ball,17274,147;
+blue vines,12341,123;
+bone,12208,123;
+branch of stone,17275,180;
+brush,17304,90.00;
+bug antenna,12184,96.00;
+bug venom,12185,371;
+bulb,12154,132;
+bull tail,17338,102;
+cat ear,17291,123;
+chansey egg,12211,1000;
+colored feather,17316,168;
+cow tail,17306,180;
+crab claw,12207,90.00;
+dark beak,17344,123;
+butterfly wing,17314,66.00;
+dodrio feather,17328,102;
+dog ears,17285,147;
+dome fossil,12579,8000;
+dragon tail,17340,450;
+egg shell,17270,1000;
+electric tail,12169,1000;
+elephant foot,17302,180;
+farfetch'd stick,12199,300;
+female ear,17320,147;
+fire ear,17293,147; 
+fire horse foot,17327,114;
+fire tail,17313,132;
+fish fin,17335,78.00;
+fox tail,12180,1000;
+gem star,17336,102;
+giant bat wing,17267,180;
+giant fin,17339,180;
+giant piece of fur,17323,180;
+giant ruby,17341,200;
+gift bag,17297,90.00;
+gligar claw,17284,90.00;
+gosme,12202,78.00;
+great petals,17260,132;
+gyarados tail,12148,800;
+helicopter leaves,17279,69.00;
+helix fossil,12580,8000;
+horn drill,17333,168;
+hot fur,17261,132;
+ice bra,12168,1000;
+iron bracelet,12192,114;
+insect claw,17290,180;
+insect tail,17342,114;
+kanga ear,17334,180;
+karate duck,12190,123;
+ladybug wing,17265,78.00;
+Linearly Guided Hypnose,17357,410; 
+Lizard Tail,17310,450;
+Locksmith of shell,12203,24.00;
+Luck Medallion,17356,1000;
+Magikarp Fin,12334,3;
+Magma Foot,17337,1000;
+Magnet,12198,90.00;
+Male Ear,17319,147;
+Microphone,12160,147;
+Mimic Clothes,12166,450;
+Miss Traces,12775,310;
+Monkey Paw,17278,90.00;
+Mushroom,12183,114;
+Old Amber,12581,1000000;
+Onix Tail,12654,371;
+Owl Feather,17264,147;
+Piece Of Coral,17295,114;
+Piece Of Diglett,17322,78.00;
+Piece Of Shell,17282,147;
+Pinsir Horn,12141,102;
+Plant Foot,17332,123;
+Plant Tail,13897,114;
+Point Of Light,17268,114;
+Psychic Spoon,12193,180;
+Psyduck Mug,12189,129;
+Punch Machine,12191,135;
+rat tail,12647,54.00;
+red scale,17262,132;
+red wing,17317,114;
+reindeer horn,17303,123;
+scizor claw,13869,2000;
+scythe,12167,1000;
+seahorse tail,17301,204;
+seal tail,17329,147;
+sheep wool,17272,132;
+slow tail,12197,225;
+small shell,17289,69.00;
+small tail,17286,123;
+small wings,17283,69.00;
+snake tail,17326,78.00;
+spider legs,17266,78.00;
+spin machine,17305,135.00;
+squirrel tail,17263,78.00;
+squirtle hull,12158,132;
+steelix tail,17288,2000;
+steel wings,17299,192;
+sticky hand,17330,120;
+strange antenna,17281,180;
+strange bone,17300,180;
+strange wing,17271,168;
+strange flower,12702,114;
+strange rock,12755,159;
+strange spike,17331,135;
+strange tail,17280,180;
+strange thing,17276,147;
+streak tail,17298,180;
+tentacle,13866,159;
+tongue,12209,410;
+topknot,13901,147;
+traces of ghost,12204,180;
+tusk,17294,180;
+venom flute,12210,78.00;
+wool ball,12187,69.00;
+wooper horn,17343,147;
+yellow flower,17277,114;"/>
+</parameters>
+</npc>

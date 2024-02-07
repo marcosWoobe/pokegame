@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mark" script="default.lua" walkinterval="350000" floorchange="0" speed="0">
+<health now="150" max="150"/>
+<look type="516" head="91" body="114" legs="86" feet="0"/>
+<parameters>
+<parameter key="message_greet" value="Hello dear customer! Are you here to see my offers? Come on, lets {trade}!"/>
+<parameter key="message_farewell" value="Good bye!"/>
+<parameter key="message_idletimeout" value="Good bye!"/>
+<parameter key="message_walkaway" value="Good bye!"/>
+<parameter key="module_shop" value="1"/>
+<parameter key="shop_buyable" value="
+poke ball,11826,5.00;
+great ball,11832,20.00;
+super ball,11835,50.00;
+ultra ball,2392,130.00;
+revive,12344,250.00;
+medicine,12349,10.00;
+small potion,12347,5.00;
+great potion,12348,10.00;
+ultra potion,12346,22.00;
+hyper potion,12345,55.00;
+poke bag,12332,10.00;
+great bag,17353,100.00;
+super bag,17354,500.00;
+ultra bag,17355,1000.00;
+"/>
+<parameter key="shop_sellable" value="
+bag of pollem,12153,40;
+band aid,17346,0.50;
+bird beak,12172,30.00;
+biten apple,12173,6.50;
+bootle of poison,12165,0.50;
+bug gosme,13783,0.50;
+comb,12179,100;
+dark gem,17348,0.50;
+dragon scale,17349,0.50;
+dragon tooth,12159,610;
+earth ball,17352,0.50;
+eletric box,12176,20.00;
+enchanted gem,13785,0.50;
+essence of fire,12162,0.50;
+fur,12181,13.00;
+future orb,12194,15.50;
+feather,12200,7.50;
+ghost essence,17350,0.50;
+horn,12178,25.00;
+ice orb,12201,32.50;
+leaves,12155,8.50;
+nail,12157,10.00;
+piece of steel,17347,0.50;
+pot of lava,12152,18;
+pot of moss bug,12171,7.50;
+ruber ball,2147,0.50;
+ruby,12188,100;
+sandbag,12652,15;
+screw,12164,0.50;
+seed,12163,0.50;
+small stone,12337,0.50;
+snowball,12777,0.50;
+stone orb,12196,16.50;
+straw,2694,0.50;
+tooth,12175,8.00;
+water gem,12161,0.50;
+water pendant,12170,10.00;"/>
+</parameters>
+</npc>

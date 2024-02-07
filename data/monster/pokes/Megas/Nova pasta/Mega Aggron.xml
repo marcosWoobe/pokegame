@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mega Aggron" nameDescription="a mega aggron" race="rock" experience="1604" speed="1147" manacost="0">
+    <health now="170" max="170"/>
+    <look type="1797" head="80" body="90" legs="95" feet="113" corpse="14307"/>
+    <targetchange interval="10000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        <flag hungerdelay="17"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1000" chance="100" range="1" min="-50" max="-100"/>
+		<attack name="Scratch" interval="1000" chance="15" range="1"/>
+		<attack name="Ember" interval="1000" chance="15" range="9"/>
+		<attack name="Flamethrower" interval="1000" chance="15" range="9"/>
+		<attack name="Fireball" interval="1000" chance="15" range="9"/>
+		<attack name="Fire Fang" interval="1000" chance="15" range="1"/>
+		<attack name="Raging Blast" interval="3000" chance="10" range="9"/>
+		<attack name="Fire Blast" interval="3000" chance="10" range="9"/>
+		<attack name="Air Slash" interval="3000" chance="10" range="9"/>
+		<attack name="Wing Attack" interval="1000" chance="15" range="9"/>
+		<attack name="Magma Storm" interval="3000" chance="10" range="9"/>
+		<attack name="Scary Face" interval="3000" chance="10" range="9"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="AGGRON!"/>
+		<voice sentence="MEEEGAAAH ZAARD!"/>
+    </voices>
+    <loot>
+        <item id="12990" chance="1000" countmax="1"/> <!-- devoted token -->
+		<item id="12270" chance="4000" countmax="2"/>
+		<item id="13391" chance="4000" countmax="1"/>
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shuckle" nameDescription="a shuckle" race="ground" experience="250" speed="262" manacost="0">
+  <health now="40" max="40"/>
+  <look type="949" head="48" body="57" legs="95" feet="113" corpse="4430"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+	  <attack name="melee" interval="1500" chance="100" range="1" min="-22" max="-36"/>
+        <attack name="Bug Bite" interval="2250" chance="25" range="2"/>
+        <attack name="Wrap" interval="2500" chance="25" range="4"/>
+        <attack name="Struggle Bug" interval="3000" chance="25" range="1"/>
+        <attack name="Safeguard" interval="3250" chance="25" range="5"/>
+        <attack name="Rest" interval="5000" chance="5" range="4"/>
+  </attacks>
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="10">
+	<voice sentence="SHUU!"/>
+<voice sentence="CKLEE!"/>
+<voice sentence="SHUCKLE!"/>
+  </voices>
+  <loot>
+	<item id="12337" countmax="20" chance="35"/> <!-- small stone -->
+	<item id="11448" countmax="1" chance="15"/> <!-- coccon stone -->
+		<item id="13783" chance="80" countmax="15"/> <!-- bug gosme -->
+        <item id="13895" chance="35" count="1" countmax="1"/> <!-- small shell -->
+  </loot>
+<script>
+<event name="Spawn"/>
+</script>
+</monster>

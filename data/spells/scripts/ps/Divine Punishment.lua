@@ -1,0 +1,212 @@
+function onCastSpell(cid, var)
+    -----------------\/padrão para todos os arquivos------------
+    
+     --Posições--
+    ---------------\/---------------------\/----------------------\/---------------------------------------------------------
+    posC = getThingPosWithDebug(cid) PosC = posC PosCid = posC posCid = posC
+    posT = getThingPosWithDebug(target) PosT = posT PosTarget = posT posTarget = posT 
+    posC1 = getThingPosWithDebug(cid) posC1.x = posC1.x+1 posC1.y = posC1.y+1 PosC1 = posC1 posCid1 = posC1 PosCid1 = posC1 
+    posT1 = getThingPosWithDebug(target) posT1.x = posT1.x+1 posT1.y = posT1.y+1 PosT1 = posT1 posTarget1 = posT1 PosTarget1 = posT1
+    --------------------------------------------------------------------------------------------------------------------------
+
+    local spell = var
+    local target = 0
+    local getDistDelay = 0
+    if not isCreature(cid) or getCreatureHealth(cid) <= 0 then return false end  --alterado v1.6
+    if isSleeping(cid) and getPlayerStorageValue(cid, 21100) <= -1 then return true end  --alterado v1.6
+
+    if isCreature(getMasterTarget(cid)) then
+	    target = getMasterTarget(cid)
+	    getDistDelay = getDistanceBetween(getThingPosWithDebug(cid), getThingPosWithDebug(target)) * const_distance_delay
+    end
+
+    if isMonster(cid) and not isSummon(cid) then
+	    if getCreatureCondition(cid, CONDITION_EXHAUST) then
+	        return true
+	    end
+	    doCreatureAddCondition(cid, wildexhaust)
+    end
+
+    local mydir = isCreature(target) and getCreatureDirectionToTarget(cid, target) or getCreatureLookDir(cid)
+    local table = getTableMove(cid, spell) --alterado v1.6
+
+    local min = 0
+    local max = 0                                                                                                                                                                                                                                                                     
+                                                                                       --alterado v1.7 \/\/
+    if ehMonstro(cid) and isCreature(getMasterTarget(cid)) and isInArray(specialabilities["evasion"], getCreatureName(getMasterTarget(cid))) then 
+        local target = getMasterTarget(cid)
+        if math.random(1, 100) <= passivesChances["Evasion"][getCreatureName(target)] then                                                                                      
+            if isCreature(getMasterTarget(target)) then  --alterado v1.6 
+                doSendMagicEffect(getThingPosWithDebug(target), 211)
+                doSendAnimatedText(getThingPosWithDebug(target), "TOO BAD", 215)                                 
+                doTeleportThing(target, getClosestFreeTile(target, getThingPosWithDebug(cid)), false)
+                doSendMagicEffect(getThingPosWithDebug(target), 211)
+                doFaceCreature(target, getThingPosWithDebug(cid)) 
+                return false    --alterado v1.8
+            end
+        end   		 
+    end
+
+    --- FEAR / ROAR / SILENCE ---
+    if (isWithFear(cid) or isSilence(cid)) and getPlayerStorageValue(cid, 21100) <= -1 then
+        return true                                      --alterado v1.6!!
+    end
+    ----------------------------
+	
+    if not isPlayer(cid) then
+	    if table ~= "" then   --alterado v1.6
+	
+            if getSpecialAttack(cid) and table.f then
+                min = getSpecialAttack(cid) * table.f * 0.1   --alterado v1.6
+            end
+	        max = min + (isSummon(cid) and getMasterLevel(cid) or getPokemonLevel(cid))
+	
+	        if spell == "Selfdestruct" then
+	            min = getCreatureHealth(cid)  --alterado v1.6
+	            max = getCreatureHealth(cid)
+            end
+	
+		    if not isSummon(cid) and not isInArray({"Demon Puncher", "Demon Kicker"}, spell) then --alterado v1.7
+			    doCreatureSay(cid, string.upper(spell).."!", TALKTYPE_MONSTER)
+		    end
+		    if isNpcSummon(cid) then
+			    local mnn = {" use ", " "}
+			    local use = mnn[math.random(#mnn)]
+			    doCreatureSay(getCreatureMaster(cid), getPlayerStorageValue(cid, 1007)..","..use..""..doCorrectString(spell).."!", 1)
+		    end
+	    else
+	        print("Error trying to use move "..spell..", move not specified in the pokemon table.")
+	    end	
+    end
+    --- FOCUS ----------------------------------            
+    if getPlayerStorageValue(cid, 253) >= 0 and table ~= "" and table.f ~= 0 then   --alterado v1.6
+	    min = min * 2
+	    max = max * 2
+	    setPlayerStorageValue(cid, 253, -1)
+    end
+    --- Shredder Team -------------------------------
+    if getPlayerStorageValue(cid, 637501) >= 1 then
+        if #getCreatureSummons(cid) == 1 then
+            docastspell(getCreatureSummons(cid)[1], spell)
+        elseif #getCreatureSummons(cid) == 2 then
+            docastspell(getCreatureSummons(cid)[1], spell)
+            docastspell(getCreatureSummons(cid)[2], spell)
+        end    
+      
+    elseif getPlayerStorageValue(cid, 637500) >= 1 then
+        min = 0
+        max = 0                                     
+    end
+    ------------------Miss System--------------------------
+    local cd = getPlayerStorageValue(cid, conds["Miss"])
+    local cd2 = getPlayerStorageValue(cid, conds["Confusion"])      --alterado v1.5
+    local cd3 = getPlayerStorageValue(cid, conds["Stun"]) 
+    if cd >= 0 or cd2 >= 0 or cd3 >= 0 then                                                         --alterado v1.7
+        if not isInArray({"Aromateraphy", "Emergency Call", "Magical Leaf", "Sunny Day", "Safeguard", "Rain Dance"}, spell) and getPlayerStorageValue(cid, 21100) <= -1 then
+            if math.random(1, 100) > 85 then                                                                               --alterado v1.6
+                doSendAnimatedText(getThingPosWithDebug(cid), "MISS", 215)
+                return false
+            end
+        end
+    end
+    ---------------GHOST DAMAGE-----------------------
+    ghostDmg = GHOSTDAMAGE
+    psyDmg = PSYCHICDAMAGE
+
+    if getPlayerStorageValue(cid, 999457) >= 1 and table ~= "" and table.f ~= 0 then    --alterado v1.6
+        psyDmg = MIRACLEDAMAGE                                                              
+        ghostDmg = DARK_EYEDAMAGE
+        addEvent(setPlayerStorageValue, 50, cid, 999457, -1)
+    end
+    --------------------REFLECT----------------------
+    setPlayerStorageValue(cid, 21100, -1)                --alterado v1.6
+    if not isInArray({"Psybeam", "Sand Attack", "Flamethrower"}, spell) then  --alterado v1.8
+        setPlayerStorageValue(cid, 21101, -1)
+    end
+    setPlayerStorageValue(cid, 21102, spell)
+
+    -- POS
+
+    posC = getThingPosWithDebug(cid) PosC = posC PosCid = posC posCid = posC
+    posT = getThingPosWithDebug(target) PosT = posT PosTarget = posT posTarget = posT 
+    posC1 = getThingPosWithDebug(cid) posC1.x = posC1.x+1 posC1.y = posC1.y+1 PosC1 = posC1 posCid1 = posC1 PosCid1 = posC1 
+    posT1 = getThingPosWithDebug(target) posT1.x = posT1.x+1 posT1.y = posT1.y+1 PosT1 = posT1 posTarget1 = posT1 PosTarget1 = posT1
+
+    ---------------------fim da padrão /\ e aparti daqui \/ é o code da spell------------------------------
+
+
+		local roardirections = { 
+			[NORTH] = {SOUTH},
+			[SOUTH] = {NORTH},
+			[WEST] = {EAST},
+		[EAST] = {WEST}}
+		
+		local function divineBack(cid)
+			if not isCreature(cid) then return true end
+			local uid = checkAreaUid(getCreaturePosition(cid), check, 1, 1)
+			for _,pid in pairs(uid) do
+				dirrr = getCreatureDirectionToTarget(pid, cid)
+				-- delay = getNextStepDelay(pid, 0)
+				if isSummon(cid) and (isMonster(pid) or (isSummon(pid) and canAttackOther(cid, pid) == "Can") or (isPlayer(pid) and canAttackOther(cid, pid) == "Can")) and pid ~= cid then
+					setPlayerStorageValue(pid, 654878, 1)
+					doChangeSpeed(pid, -getCreatureSpeed(pid))
+					doChangeSpeed(pid, 100)
+					doPushCreature(pid, roardirections[dirrr][1], 1, 0)
+					doChangeSpeed(pid, -getCreatureSpeed(pid))
+					addEvent(setPlayerStorageValue, 6450, pid, 654878, -1)
+					addEvent(doRegainSpeed, 6450, pid)
+				elseif isMonster(cid) and (isSummon(pid) or (isPlayer(pid) and #getCreatureSummons(pid) <= 0)) and pid ~= cid then
+					setPlayerStorageValue(pid, 654878, 1)
+					doChangeSpeed(pid, -getCreatureSpeed(pid))
+					doChangeSpeed(pid, 100)
+					doPushCreature(pid, roardirections[dirrr][1], 1, 0)
+					doChangeSpeed(pid, -getCreatureSpeed(pid))
+					addEvent(doRegainSpeed, 6450, pid)
+					addEvent(setPlayerStorageValue, 6450, pid, 654878, -1)
+				end
+			end 
+		end
+		
+		local function doDivine(cid, min, max, spell, rounds, area)
+			if not isCreature(cid) then return true end
+			local ret = {}
+			ret.id = 0
+			ret.check = 0
+			ret.cd = rounds
+			ret.cond = "Confusion"
+			
+			for i = 1, 9 do
+				addEvent(doMoveInArea2, i*500, cid, 137, area[i], psyDmg, min, max, spell, ret)
+			end
+		end
+		
+		local rounds = math.random(9, 12)
+		local area = {punish1, punish2, punish3, punish1, punish2, punish3, punish1, punish2, punish3}
+		
+		local posi = getThingPosWithDebug(cid) 
+		posi.x = posi.x+1
+		posi.y = posi.y+1
+		
+		setPlayerStorageValue(cid, 2365487, 1)
+		addEvent(setPlayerStorageValue, 6450, cid, 2365487, -1) --alterado v1.4
+		doDisapear(cid)
+		doChangeSpeed(cid, -getCreatureSpeed(cid))
+		doSendMagicEffect(posi, 247) 
+		addEvent(doAppear, 4450, cid)
+		addEvent(doRegainSpeed, 6450, cid)
+		
+		local uid = checkAreaUid(getCreaturePosition(cid), check, 1, 1)
+		for _,pid in pairs(uid) do
+			if isSummon(cid) and (isMonster(pid) or (isSummon(pid) and canAttackOther(cid, pid) == "Can" ) or (isPlayer(pid) and canAttackOther(cid, pid) == "Can")) and pid ~= cid then
+				doChangeSpeed(pid, -getCreatureSpeed(pid))
+			elseif isMonster(cid) and (isSummon(pid) or (isPlayer(pid) and #getCreatureSummons(pid) <= 0)) and pid ~= cid then
+				doChangeSpeed(pid, -getCreatureSpeed(pid)) 
+			end
+		end
+		
+		addEvent(divineBack, 2100, cid)
+		addEvent(doDivine, 2200, cid, min, max, spell, rounds, area)
+
+	
+return true
+end

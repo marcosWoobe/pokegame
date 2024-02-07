@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Nike" script="torneio.lua" walkinterval="999000" floorchange="0">
+<health now="150" max="150"/>
+<look type="610" head="20" body="100" legs="50" feet="99" corpse="2212"/>]
+<parameters>
+<parameter key="message_greet" value="Ola |PLAYERNAME|. Sou o NIKE, Encarregado pelo Torneio diario caso queira entrar diga: {torneio}."/>
+        </parameters>
+</npc>

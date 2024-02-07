@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<globalevents>
+
+	<globalevent name="mensagem" interval="1200" script="mixlort/mensagens ms.lua"/> 
+<!-- <globalevent name="autoBroadcast" interval="200" script="broadcast.lua"/> -->
+
+	<globalevent name="GlobalSave" time="05:00" event="script" value="GlobalSave.lua"/>
+
+	<!--Evento Bag-->
+	<globalevent name="eventobag1" time="00:00" event="script" value="evento bag.lua"/>
+	<globalevent name="eventobag2" time="02:00" event="script" value="evento bag.lua"/>	
+	<globalevent name="eventobag3" time="04:00" event="script" value="evento bag.lua"/>	
+	<globalevent name="eventobag4" time="06:00" event="script" value="evento bag.lua"/>		
+	<globalevent name="eventobag5" time="08:00" event="script" value="evento bag.lua"/>
+	<globalevent name="eventobag6" time="10:00" event="script" value="evento bag.lua"/>	
+	<globalevent name="eventobag7" time="12:00" event="script" value="evento bag.lua"/>	
+	<globalevent name="eventobag8" time="14:00" event="script" value="evento bag.lua"/>			
+	<globalevent name="eventobag9" time="16:00" event="script" value="evento bag.lua"/>		
+	<globalevent name="eventobag10" time="18:00" event="script" value="evento bag.lua"/>			
+	<globalevent name="eventobag11" time="20:00" event="script" value="evento bag.lua"/>	
+	<globalevent name="eventobag12" time="22:00" event="script" value="evento bag.lua"/>
+
+	<!-- <globalevent name="HouseClean" time="03:00" event="script" value="houseclean.lua"/> -->
+
+	<globalevent name="save" interval="10800" event="script" value="save.lua"/>
+<!-- <globalevent name="animatedtext" interval="1" script="textochao.lua"/>-->
+	<globalevent name="shop" interval="300" script="shop.lua"/> 
+	<!-- <globalevent name="saveplayer" interval="1800" event="script" value="saveplayer.lua"/>  -->
+	<globalevent name="serverstart" type="start" event="script" value="start.lua"/>
+
+	<!-- <globalevent name="playersrecord" type="record" event="script" value="record.lua"/> -->
+
+	<!-- <globalevent name="TournamentStart1" time="04:03" event="script" value="torneio/torneio.lua"/> -->
+
+<!-- 	<globalevent name="TournamentStart2" time="15:00" event="script" value="torneio/torneio.lua"/>
+	<globalevent name="TournamentStart3" time="20:00" event="script" value="torneio/torneio.lua"/>
+	<globalevent name="msgtorneio" interval="60" event="script" value="torneio/msgtorneio.lua"/>  -->
+
+
+<!-- <globalevent name="timer_example" time="21:35" event="script" value="my_script.lua"/> -->
+
+	<globalevent name="DarkrayStart1" time="00:00" event="script" value="dugeon/darkray.lua"/>
+	<globalevent name="DarkrayStart2" time="05:00" event="script" value="dugeon/darkray.lua"/>
+	<globalevent name="DarkrayStart3" time="10:00" event="script" value="dugeon/darkray.lua"/>
+	<globalevent name="DarkrayStart4" time="15:00" event="script" value="dugeon/darkray.lua"/>
+	<globalevent name="DarkrayStart5" time="20:00" event="script" value="dugeon/darkray.lua"/>
+
+	<!-- INVASÃO -->
+	<!-- <globalevent name="InvasaoStart1" time="00:55" event="script" value="dugeon/invasao.lua"/>  -->
+	<!-- <globalevent name="InvasaoStart2" time="01:00" event="script" value="dugeon/invasao.lua"/> -->
+	<!-- <globalevent name="InvasaoStart3" time="01:05" event="script" value="dugeon/invasao.lua"/> -->
+
+	<!-- <globalevent name="InvasaoStart1" time="12:00" event="script" value="dugeon/invasao.lua"/>  -->
+	<!-- <globalevent name="InvasaoStart2" time="12:05" event="script" value="dugeon/invasao.lua"/> -->
+	<!-- <globalevent name="InvasaoStart3" time="12:10" event="script" value="dugeon/invasao.lua"/> -->
+	<globalevent name="InvasaoStart4" time="15:00" event="script" value="dugeon/invasao.lua"/>
+	<globalevent name="InvasaoStart5" time="15:05" event="script" value="dugeon/invasao.lua"/>
+	<globalevent name="InvasaoStart6" time="15:10" event="script" value="dugeon/invasao.lua"/>
+	<globalevent name="InvasaoStart7" time="20:00" event="script" value="dugeon/invasao.lua"/>
+	<globalevent name="InvasaoStart8" time="20:05" event="script" value="dugeon/invasao.lua"/>
+	<globalevent name="InvasaoStart9" time="20:10" event="script" value="dugeon/invasao.lua"/>
+	<!-- <globalevent name="InvasaoStart10" time="21:00" event="script" value="dugeon/invasao.lua"/> -->
+	<!-- <globalevent name="InvasaoStart11" time="21:05" event="script" value="dugeon/invasao.lua"/> -->
+	<!-- <globalevent name="InvasaoStart12" time="21:10" event="script" value="dugeon/invasao.lua"/> -->
+
+</globalevents>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Aggron" nameDescription="a Kirlia " race="ghost" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1738" head="65" body="90" legs="95" feet="113" corpse="14753"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+	<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+	        <attack name="Iron Head" interval="2250" chance="25" range="2"/>
+        <attack name="Iron Tail" interval="2500" chance="25" range="4"/>
+        <attack name="Mud Slap" interval="2750" chance="25" range="6"/>
+        <attack name="Stone Edge" interval="3000" chance="25" range="1"/>
+        <attack name="Metal Burst" interval="3250" chance="25" range="5"/>
+        <attack name="Metal Claw" interval="3500" chance="25" range="4"/>
+        <attack name="Meteor Smash" interval="3750" chance="25" range="6"/>
+        <attack name="Flash Cannon" interval="4000" chance="25" range="6"/>
+		<attack name="Harden" interval="4250" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Aggron!"/>
+    </voices>
+    <loot>
+		<item id="12196" chance="35" count="1"/> <!-- stone orb -->
+        <item id="15112" chance="35" count="1" countmax="1"/> <!-- metal hull -->
+        <item id="12337" chance="80" countmax="40"/> <!-- small stone -->  
+		<item id="17347" chance="80" countmax="40"/> <!-- piece of steel -->	
+        <item id="12232" chance="12" count="1"/> <!-- metal stone -->
+        <item id="11445" chance="17" count="1"/> <!-- rock stone -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

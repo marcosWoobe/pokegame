@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Arcanine" nameDescription="a arcanine" race="fire" experience="1100" speed="307" manacost="0">
+    <health now="1600" max="1600"/>
+    <look type="439" head="75" body="85" legs="95" feet="113" corpse="11842"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Ember" interval="3000" chance="100" range="6"/>
+        <attack name="Bite" interval="4000" chance="100" range="1"/>
+		<attack name="Roar" interval="5000" chance="100" range="2"/>
+		<attack name="Fire Fang" interval="8000" chance="100" range="1"/>
+<!-- Magina nao pertence a esse pokemon 		<attack name="Fire Blast" interval="9000" chance="100" range="4"/> -->
+		<attack name="Tri Flames" interval="20000" chance="100" range="4"/>
+		<attack name="War Dog" interval="22000" chance="100" range="4"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="ARCANINE!"/>
+    </voices>
+    <loot>
+        <item id="11447" chance="15" countmax="1"/> <!-- fire stone -->
+		<item id="12244" chance="15" count="1"/> <!-- ancient stone -->
+        <item id="12342" chance="34" countmax="1"/> <!-- pot with fire -->
+        <item id="12152" chance="34" countmax="1"/> <!-- pot of lava -->
+        <item id="17323" chance="35" countmax="1"/> <!-- giant piece of fur -->		
+        <item id="12157" chance="34" countmax="1"/> <!-- nail -->
+        <item id="12162" chance="80" countmax="40"/> <!-- essence of fire -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

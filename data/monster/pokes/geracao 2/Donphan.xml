@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Donphan" nameDescription="a donphan" race="ground" experience="650" speed="239" manacost="0">
+    <health now="120" max="120"/>
+  <look type="1458" head="60" body="75" legs="95" feet="113" corpse="3283"/>
+	<targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Mud Slap" interval="2250" chance="25" range="2"/>
+        <attack name="Fire Fang" interval="2500" chance="25" range="4"/>
+        <attack name="Horn Attack" interval="2750" chance="25" range="6"/>
+        <attack name="Rollout" interval="3000" chance="25" range="1"/>
+        <attack name="Bulldoze" interval="3500" chance="25" range="4"/>
+        <attack name="Scary Face" interval="3750" chance="25" range="6"/>
+        <attack name="Earthquake" interval="4000" chance="25" range="6"/>
+        <attack name="Defense Curl" interval="4250" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+<voices interval="5000" chance="10">
+	<voice sentence="DOOON!"/>
+<voice sentence="PHAAN!"/>
+<voice sentence="DONPHAN!"/>
+  </voices>
+    <loot>
+        <item id="11451" chance="15" count="1" countmax="1"/> <!-- earth stone -->
+        <item id="12177" chance="35" count="1" countmax="2"/> <!-- sandbag -->   
+        <item id="17352" chance="80" countmax="30"/> <!-- earth ball -->   		
+		<item id="17302" chance="35" count="1" countmax="2"/> <!-- elephant foot -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

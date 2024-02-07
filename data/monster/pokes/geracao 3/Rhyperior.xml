@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Rhyperion" nameDescription="a rhyperior" race="rock" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1789" head="65" body="90" legs="95" feet="113" corpse="14773"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-50" max="-1000"/>
+        <attack name="Horn Attack" interval="2500" chance="100" range="1"/>
+        <attack name="Horn Drill" interval="3000" chance="100" range="2"/>
+		<attack name="Rock Throw" interval="3500" chance="100" range="4"/>
+		<attack name="Falling Rocks" interval="4000" chance="100" range="4"/>
+		<attack name="Hammer Arm" interval="4500" chance="100" range="6"/>
+		<attack name="Crusher Stomp" interval="5000" chance="100" range="6"/>
+		<attack name="Stone Edge" interval="5500" chance="100" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Rhyperion!"/>
+    </voices>
+    <loot>
+		<item id="11445" chance="17" count="1"/>  <!-- Rock Stone -->	
+		<!-- <item id="15070" chance="2.5" count="1"/> Protector	 -->
+		<item id="15125" chance="10" count="1"/>  <!-- solid rock paw	 -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

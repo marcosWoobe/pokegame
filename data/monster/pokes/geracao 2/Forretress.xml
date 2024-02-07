@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Forretress" nameDescription="a forretress" race="bug" experience="450" speed="284" manacost="0">
+  <health now="40" max="40"/>
+  <look type="910" head="37" body="57" legs="95" feet="113" corpse="3290"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Iron Head" interval="2250" chance="25" range="2"/>
+        <attack name="Bug Bite" interval="2500" chance="25" range="4"/>
+        <attack name="Pin Missile" interval="2750" chance="25" range="6"/>
+        <attack name="Gyro Ball" interval="3250" chance="25" range="5"/>
+        <attack name="Zap Cannon" interval="3500" chance="25" range="4"/>
+        <attack name="Heavy Slam" interval="3750" chance="25" range="6"/>
+        <attack name="Selfdestruct" interval="4000" chance="25" range="6"/>
+    </attacks>
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="10">
+	<voice sentence="FORREE!"/>
+<voice sentence="TREESS!"/>
+<voice sentence="FORRETRESS!"/>
+  </voices>
+  <loot>
+        <item id="12171" chance="35" count="1" countmax="1"/> <!-- pot of moss bug -->
+        <item id="11448" chance="15" count="1" countmax="1"/> <!-- coccon stone -->
+        <item id="13795" chance="35" count="1"/> <!-- piece of shell -->
+		<item id="13783" chance="80" countmax="25"/> <!-- bug gosme -->
+		<item id="17347" chance="80" countmax="50"/> <!-- piece of steel -->
+  </loot>
+<script>
+<event name="Spawn"/>
+</script>
+</monster>

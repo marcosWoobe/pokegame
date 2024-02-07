@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Pokemon Master" script="NPC.lua" walkinterval="350000" floorchange="0" speed="0" lookdir="2">
+<health now="150" max="150"/>
+<look type="1673" head="114" body="119" legs="114" feet="144"/>
+
+	<parameters>
+  <parameter key="message_greet" value="Bom dia Gostaria de Ganhar uma {outfit}."/>
+   <parameter key="message_farewell" value="Ate logo mais Eu Acho |PLAYERNAME|"/>
+   <parameter key="message_idletimeout" value="Ate logo mais Eu Acho |PLAYERNAME|"/>
+   <parameter key="message_walkaway" value="Ate logo mais Eu Acho |PLAYERNAME|"/>
+
+	</parameters>
+
+</npc>

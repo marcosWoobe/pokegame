@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gligar" nameDescription="a gligar" race="flying" experience="350" speed="285" manacost="0">
+  <health now="40" max="40"/>
+  <look type="925" head="52" body="67" legs="95" feet="113" corpse="3293"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Sand Attack" interval="2250" chance="25" range="2"/>
+        <attack name="Poison Sting" interval="2500" chance="25" range="4"/>
+        <attack name="Slash" interval="2750" chance="25" range="6"/>
+        <attack name="X-Scissor" interval="3250" chance="25" range="5"/>
+        <attack name="Fury Cutter" interval="3500" chance="25" range="4"/>
+        <attack name="Guillotine" interval="3750" chance="25" range="6"/>
+        <attack name="Harden" interval="4000" chance="25" range="6"/>
+  </attacks>
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="10">
+	<voice sentence="GLII!"/>
+<voice sentence="GAAR!"/>
+<voice sentence="GLIGAR!"/>
+  </voices>
+  <loot>
+        <item id="2147" chance="80" countmax="15"/> <!-- rubber ball -->	
+		<item id="12177" countmax="1" chance="35"/> <!--  sandbag -->
+	    <item id="2694" chance="80" countmax="12"/> <!-- straw -->	
+		<item id="12175" chance="35" countmax="1"/> <!-- tooth -->
+        <item id="12240" chance="35" count="1" countmax="1"/>  <!-- bag of poison -->
+        <item id="11443" chance="15" count="1" countmax="1"/> <!-- venom stone -->
+        <item id="13875" chance="35" count="1" countmax="1"/>  <!-- gligar claw -->
+  </loot>
+
+<script>
+<event name="Spawn"/>
+</script>
+</monster>

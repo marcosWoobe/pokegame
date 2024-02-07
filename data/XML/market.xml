@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<market>
+	<xhelds>
+		<xheld id="1" name="X-Defense(Tier : 1)"/>
+		<xheld id="2" name="X-Defense(Tier : 2)"/>
+		<xheld id="3" name="X-Defense(Tier : 3)"/>
+		<xheld id="4" name="X-Defense(Tier : 4)"/>
+		<xheld id="5" name="X-Defense(Tier : 5)"/>
+		<xheld id="6" name="X-Defense(Tier : 6)"/>
+		<xheld id="7" name="X-Defense(Tier : 7)"/>
+		
+		<xheld id="8" name="X-Attack(Tier : 1)"/>
+		<xheld id="9" name="X-Attack(Tier : 2)"/>
+		<xheld id="10" name="X-Attack(Tier : 3)"/>
+		<xheld id="11" name="X-Attack(Tier : 4)"/>
+		<xheld id="12" name="X-Attack(Tier : 5)"/>
+		<xheld id="13" name="X-Attack(Tier : 6)"/>
+		<xheld id="14" name="X-Attack(Tier : 7)"/>
+		
+		<xheld id="15" name="X-Return(Tier : 1)"/>
+		<xheld id="16" name="X-Return(Tier : 2)"/>
+		<xheld id="17" name="X-Return(Tier : 3)"/>
+		<xheld id="18" name="X-Return(Tier : 4)"/>
+		<xheld id="19" name="X-Return(Tier : 5)"/>
+		<xheld id="20" name="X-Return(Tier : 6)"/>
+		<xheld id="21" name="X-Return(Tier : 7)"/>
+		
+		<xheld id="22" name="X-Hellfire(Tier : 1)"/>
+		<xheld id="23" name="X-Hellfire(Tier : 2)"/>
+		<xheld id="24" name="X-Hellfire(Tier : 3)"/>
+		<xheld id="25" name="X-Hellfire(Tier : 4)"/>
+		<xheld id="26" name="X-Hellfire(Tier : 5)"/>
+		<xheld id="27" name="X-Hellfire(Tier : 6)"/>
+		<xheld id="28" name="X-Hellfire(Tier : 7)"/>
+		
+		<xheld id="29" name="X-Poison(Tier : 1)"/>
+		<xheld id="30" name="X-Poison(Tier : 2)"/>
+		<xheld id="31" name="X-Poison(Tier : 3)"/>
+		<xheld id="32" name="X-Poison(Tier : 4)"/>
+		<xheld id="33" name="X-Poison(Tier : 5)"/>
+		<xheld id="34" name="X-Poison(Tier : 6)"/>
+		<xheld id="35" name="X-Poison(Tier : 7)"/>
+		
+		<xheld id="36" name="X-Boost(Tier : 1)"/>
+		<xheld id="37" name="X-Boost(Tier : 2)"/>
+		<xheld id="38" name="X-Boost(Tier : 3)"/>
+		<xheld id="39" name="X-Boost(Tier : 4)"/>
+		<xheld id="40" name="X-Boost(Tier : 5)"/>
+		<xheld id="41" name="X-Boost(Tier : 6)"/>
+		<xheld id="42" name="X-Boost(Tier : 7)"/>
+		
+		<xheld id="43" name="X-Agility(Tier : 1)"/>
+		<xheld id="44" name="X-Agility(Tier : 2)"/>
+		<xheld id="45" name="X-Agility(Tier : 3)"/>
+		<xheld id="46" name="X-Agility(Tier : 4)"/>
+		<xheld id="47" name="X-Agility(Tier : 5)"/>
+		<xheld id="48" name="X-Agility(Tier : 6)"/>
+		<xheld id="49" name="X-Agility(Tier : 7)"/>
+	</xhelds>
+	
+	<yhelds>
+		<yheld id="1" name="Y-Regeneration(Tier: 1)"/>
+		<yheld id="2" name="Y-Regeneration(Tier: 2)"/>
+		<yheld id="3" name="Y-Regeneration(Tier: 3)"/>
+		<yheld id="4" name="Y-Regeneration(Tier: 4)"/>
+		<yheld id="5" name="Y-Regeneration(Tier: 5)"/>
+		<yheld id="6" name="Y-Regeneration(Tier: 6)"/>
+		<yheld id="7" name="Y-Regeneration(Tier: 7)"/>
+		
+		<yheld id="8" name="Y-Cure(Tier: 1)"/>
+		<yheld id="9" name="Y-Cure(Tier: 2)"/>
+		<yheld id="10" name="Y-Cure(Tier: 3)"/>
+		<yheld id="11" name="Y-Cure(Tier: 4)"/>
+		<yheld id="12" name="Y-Cure(Tier: 5)"/>
+		<yheld id="13" name="Y-Cure(Tier: 6)"/>
+		<yheld id="14" name="Y-Cure(Tier: 7)"/>
+		
+		<yheld id="15" name="Y-Wing(Tier: 1)"/>
+		<yheld id="16" name="Y-Wing(Tier: 2)"/>
+		<yheld id="17" name="Y-Wing(Tier: 3)"/>
+		<yheld id="18" name="Y-Wing(Tier: 4)"/>
+		<yheld id="19" name="Y-Wing(Tier: 5)"/>
+		<yheld id="20" name="Y-Wing(Tier: 6)"/>
+		<yheld id="21" name="Y-Wing(Tier: 7)"/>
+		
+		<yheld id="22" name="Y-Teleport(Tier: 1)"/>
+		<yheld id="23" name="Y-Teleport(Tier: 2)"/>
+		<yheld id="24" name="Y-Teleport(Tier: 3)"/>
+		<yheld id="25" name="Y-Teleport(Tier: 4)"/>
+		<yheld id="26" name="Y-Teleport(Tier: 5)"/>
+		<yheld id="27" name="Y-Teleport(Tier: 6)"/> 
+		<yheld id="28" name="Y-Teleport(Tier: 7)"/>
+	</yhelds>
+	
+	<genders>
+		<gender id="0" name="male"/>
+		<gender id="1" name="female"/>
+	</genders>
+	
+	
+</market>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Rebecca" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="150" max="150"/>
+	<look type="294" head="43" body="178" legs="48" feet="250"/>
+</npc>

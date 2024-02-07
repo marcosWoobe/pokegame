@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shiny Venomoth" nameDescription="a Shiny venomoth" race="bug" experience="484" speed="280" manacost="0">
+  <health now="90" max="90"/>
+  <look type="1243" head="100" body="300" legs="95" feet="113" corpse="12468"/>
+  <targetchange interval="1000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+<flags>
+ <flag summonable="1"/>
+ <flag attackable="1"/>
+ <flag hostile="1"/>
+ <flag illusionable="1"/>
+ <flag convinceable="1"/>
+ <flag pushable="1"/>
+ <flag canpushitems="0"/>
+ <flag canpushcreatures="0"/>
+ <flag targetdistance="1"/>
+ <flag staticattack="97"/>
+ <flag runonhealth="0"/>
+ 
+</flags>
+
+<attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Absorb" interval="2570" chance="70" range="1"/>
+        <attack name="Psychic" interval="4984" chance="70" range="1"/>
+	<attack name="Confusion" interval="5084" chance="70" range="1"/>
+        <attack name="Bug Bite" interval="2758" chance="70" range="1"/>
+        <attack name="Poison Fang" interval="2852" chance="70" range="1"/>
+        <attack name="Stun Spore" interval="5946" chance="70" range="4"/>
+	<attack name="Poison Powder" interval="4805" chance="70" range="4"/>
+	<attack name="Sleep Powder" interval="5805" chance="70" range="4"/>
+        <attack name="Super Sonic" interval="3202" chance="70" range="3"/>
+</attacks>
+
+
+<defenses armor="0" defense="0">
+</defenses>
+
+ <voices interval="5000" chance="10">
+ <voice sentence="VENOMOTH!"/>
+ </voices>
+
+  <loot>
+    <item id="12171" chance="35" count="1" countmax="1"/> <!-- pot of moss bug -->
+    <item id="12184" chance="35" count="1" countmax="1"/> <!-- bug antenna -->
+    <item id="12185" chance="35" count="1" countmax="1"/>  <!-- bug venom -->
+    <item id="12153" chance="35" count="1" countmax="1"/> <!-- bag of pollem -->    
+    <item id="11443" chance="30" count="1" countmax="1"/> <!-- venom stone -->
+    <item id="11448" chance="30" count="1" countmax="1"/> <!-- coccon stone -->
+    <item id="12282" chance="35" countmax="1"/> <!-- venom pendant -->
+    <item id="13783" chance="80" countmax="10"/> <!-- bug gosme -->
+    <item id="12165" chance="80" countmax="10"/> <!-- bottle of poison -->
+		<item id="12401" chance="0.1" count="1"/> <!-- shiny stone -->
+  </loot>
+
+<script>
+  <event name="Spawn"/> 
+</script>
+</monster>

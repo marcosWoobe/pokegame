@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kingdra" nameDescription="a kingdra" race="water" experience="1100" speed="234" manacost="0">
+    <health now="150" max="150"/>
+  <look type="944" head="60" body="78" legs="95" feet="113" corpse="3559"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Mud Shot" interval="2250" chance="25" range="2"/>
+        <attack name="SmokeScreen" interval="2500" chance="25" range="4"/>
+        <attack name="Rash Scald" interval="2750" chance="25" range="6"/>
+        <attack name="Bubbles" interval="3000" chance="25" range="1"/>
+        <attack name="Bubblebeam" interval="3250" chance="25" range="5"/>
+        <attack name="Water Gun" interval="3500" chance="25" range="4"/>
+        <attack name="Twister" interval="3750" chance="25" range="6"/>
+        <attack name="Dragon Pulse" interval="4000" chance="25" range="6"/>
+        <attack name="Hydropump" interval="4250" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+<voices interval="5000" chance="10">
+	<voice sentence="KIING!"/>
+<voice sentence="DRAAA!"/>
+<voice sentence="KINGDRA!"/>
+  </voices>
+   <loot>
+        <item id="12161" chance="80" countmax="30"/> <!-- water gem -->
+        <item id="12170" chance="35" count="1" countmax="1"/> <!-- water pendant -->
+        <item id="17301" chance="35" count="1" countmax="1"/> <!-- seahorse tail -->	
+        <item id="12417" chance="80" countmax="30"/> <!-- dragon scale -->			
+        <item id="11442" chance="15" count="1" countmax="1"/> <!-- water stone -->
+		<item id="12244" chance="15" count="1"/> <!-- ancient stone -->
+        <item id="11449" chance="15" count="1" countmax="1"/> <!-- crystal stone -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

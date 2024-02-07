@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shiny Drapion" nameDescription="a Shiny Drapion" race="poison" experience="1584" speed="277" manacost="0">
+  <health now="280" max="280"/>
+  <look type="2139" head="100" body="300" legs="95" feet="113" corpse="17109"/>
+  <targetchange interval="1000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+<flags>
+ <flag summonable="1"/>
+ <flag attackable="1"/>
+ <flag hostile="1"/>
+ <flag illusionable="1"/>
+ <flag convinceable="1"/>
+ <flag pushable="1"/>
+ <flag canpushitems="0"/>
+ <flag canpushcreatures="0"/>
+ <flag targetdistance="1"/>
+ <flag staticattack="97"/>
+ <flag runonhealth="0"/>
+
+</flags>
+
+<attacks> 
+       <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+	        <attack name="Poison Fang" interval="2250" chance="25" range="2"/>
+        <attack name="Crunch" interval="2500" chance="25" range="4"/>
+        <attack name="Toxic Spikes" interval="2750" chance="25" range="6"/>
+        <attack name="Pin Missile" interval="3000" chance="25" range="1"/>
+        <attack name="Sludge Bomb" interval="3500" chance="25" range="4"/>
+        <attack name="Toxic" interval="3750" chance="25" range="6"/>
+        <attack name="Cross Poison" interval="4000" chance="25" range="6"/>
+		<attack name="Night Slash" interval="4000" chance="25" range="6"/>
+		<attack name="Scary Face" interval="4000" chance="25" range="6"/>
+		</attacks>
+<defenses armor="0" defense="0">
+</defenses>
+
+ <voices interval="5000" chance="10">
+ <voice sentence="Shiny Drapion!"/>
+ </voices>
+
+  <loot>
+            <item id="11443" chance="20000" count="1" countmax="5"/> <!-- venom stone -->
+  </loot>
+
+<script>
+  <event name="Spawn"/> 
+</script>
+</monster>

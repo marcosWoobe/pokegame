@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mega Beedrill" nameDescription="a mega beedrill" race="bug" experience="1100" speed="217" manacost="0">
+    <health now="120" max="120"/>
+    <look type="79" head="70" body="90" legs="95" feet="113" corpse="11844"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="2"/>
+        <flag staticattack="100"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+   <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="String Shot" interval="2664" chance="70" range="3"/>
+        <attack name="Poison Sting" interval="2570" chance="70" range="1"/>
+        <attack name="Fury Cutter" interval="2852" chance="70" range="4"/>
+        <attack name="Pin Missile" interval="2946" chance="70" range="4"/>
+        <attack name="Rage" interval="2946" chance="70" range="4"/>
+		<attack name="Strafe" interval="2946" chance="70" range="4"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="MEGA BEEDRILL!"/>
+    </voices>
+    <loot>
+        <item id="11448" chance="5" count="1"/> <!-- coccon stone -->
+		  <item id="11443" chance="2" count="1"/> <!-- venom stone -->
+        <item id="12338" chance="1" count="1"/> <!-- bag box -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Moltres" nameDescription="a moltres" race="fire" experience="1000" speed="267" manacost="0">
+    <health now="220" max="220"/>
+    <look type="616" head="100" body="100" legs="95" feet="113" corpse="11921"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+  <attacks>
+	<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+    <attack name="Ember" interval="1364" chance="90" range="18"/>
+    <attack name="Fire Spin" interval="2123" chance="60" range="6"/> 
+	<attack name="Roost" interval="15000" chance="10" range="6"/>
+    <attack name="Fireball" interval="2293" chance="80" range="12"/>
+    <attack name="Aeroblast" interval="2493" chance="80" range="6"/>
+    <attack name="Flamethrower" interval="3893" chance="90" range="6"/> 
+	<attack name="Sunny Day" interval="3593" chance="90" range="4"/>
+	<attack name="Inferno" interval="3713" chance="90" range="3"/>
+	<attack name="Aerial Ace" interval="4788" chance="100" range="6"/>
+	<attack name="Magma Storm" interval="3388" chance="90" range="6"/>
+    <attack name="Drill Peck" interval="3169" chance="70" range="1"/>
+  </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="MOLTRES!"/>
+    </voices>
+    <loot>
+        <item id="12151" chance="50" count="1" countmax="1"/>  <!-- red feather -->
+        <item id="12152" chance="3000" count="1" countmax="1"/> <!-- pot of lava -->
+        <item id="12162" chance="10000" countmax="40"/> <!-- essence of fire -->
+        <item id="12338" chance="10" count="1"/> <!-- bag box -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

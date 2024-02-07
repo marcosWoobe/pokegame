@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lugia" nameDescription="a lugia" race="flying" experience="10000" speed="350" manacost="0">
+  <health now="40" max="40"/>
+  <look type="959" head="90" body="100" legs="95" feet="113" corpse="0"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+</flags>
+
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Whirlwind" interval="2250" chance="25" range="2"/>
+        <attack name="Hydropump" interval="2500" chance="25" range="4"/>
+        <attack name="Ancient Power" interval="2750" chance="25" range="6"/>
+        <attack name="Restore" interval="3000" chance="25" range="1"/>
+        <attack name="Calm Mind" interval="3500" chance="25" range="4"/>
+        <attack name="Draco Meteor" interval="3750" chance="25" range="6"/>
+        <attack name="Bubble Blast" interval="4000" chance="25" range="6"/>
+   	</attacks>
+	
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="10">
+	<voice sentence="LUUUU!"/>
+<voice sentence="GIAAAA!"/>
+<voice sentence="LUGIA!"/>
+  </voices>
+  <loot>
+  </loot>
+<script>
+<event name="Spawn"/>
+</script>
+</monster>

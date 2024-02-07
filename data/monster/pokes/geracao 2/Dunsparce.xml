@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dunsparce" nameDescription="a dunsparce" race="electric" experience="100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+  <look type="906" head="60" body="80" legs="95" feet="113" corpse="3284"/>
+	<targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Yawn" interval="2250" chance="25" range="2"/>
+        <attack name="Take Down" interval="2750" chance="25" range="6"/>
+        <attack name="Ancient Power" interval="3000" chance="25" range="1"/>
+        <attack name="Roost" interval="3250" chance="25" range="5"/>
+        <attack name="Rage" interval="3500" chance="25" range="4"/>
+        <attack name="Defense Curl" interval="3750" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+  <voices interval="5000" chance="10">
+	<voice sentence="DUUNS!"/>
+<voice sentence="PARCEE!"/>
+<voice sentence="DUNSPARCE!"/>
+ </voices>
+    <loot>
+        <item id="2147" chance="80" countmax="20"/> <!-- rubber ball -->	
+        <item id="17283" chance="35" count="1" countmax="1"/> <!-- small wing -->			
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

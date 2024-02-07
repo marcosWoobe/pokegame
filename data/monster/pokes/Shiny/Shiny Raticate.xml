@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shiny Raticate" nameDescription="a Shiny raticate" race="normal" experience="332" speed="302" manacost="0">
+  <health now="100" max="100"/>
+  <look type="1214" head="25" body="40" legs="95" feet="113" corpse="12439"/>
+  <targetchange interval="1000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+<flags>
+ <flag summonable="1"/>
+ <flag attackable="1"/>
+ <flag hostile="1"/>
+ <flag illusionable="1"/>
+ <flag convinceable="1"/>
+ <flag pushable="1"/>
+ <flag canpushitems="0"/>
+ <flag canpushcreatures="0"/>
+ <flag targetdistance="1"/>
+ <flag staticattack="97"/>
+ <flag runonhealth="0"/>
+ 
+</flags>
+
+<attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Quick Attack" interval="2476" chance="70" range="2"/>
+        <attack name="Scratch" interval="2664" chance="70" range="1"/>
+        <attack name="Bite" interval="2852" chance="70" range="1"/>
+        <attack name="Super Fang" interval="3040" chance="70" range="1"/>
+        <attack name="Scary Face" interval="3040" chance="70" range="1"/>
+</attacks>
+
+
+<defenses armor="0" defense="0">
+</defenses>
+
+ <voices interval="5000" chance="10">
+ <voice sentence="RATICATE!"/>
+ </voices>
+
+  <loot>
+    <item id="11453" chance="30" count="1" countmax="1"/> <!-- heart stone -->
+    <item id="12173" chance="35" count="1" countmax="1"/> <!-- apple bites -->
+    <item id="12174" chance="35" countmax="1"/> <!-- rat tail -->
+    <item id="2147" chance="80" countmax="25"/> <!-- rubber ball -->
+  	<item id="12401" chance="0.1" count="1"/> <!-- shiny stone -->
+  </loot>
+
+<script>
+  <event name="Spawn"/> 
+</script>
+</monster>

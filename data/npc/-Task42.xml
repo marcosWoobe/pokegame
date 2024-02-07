@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sandra" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="150" max="150"/>
+	<look type="661" head="162" body="206" legs="207" feet="171"/>
+</npc>

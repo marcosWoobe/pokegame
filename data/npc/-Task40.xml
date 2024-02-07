@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Shirley" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="150" max="150"/>
+	<look type="513" head="117" body="12" legs="165" feet="215"/>
+</npc>

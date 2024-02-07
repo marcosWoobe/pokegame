@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fearow" nameDescription="a fearow" race="flying" experience="650" speed="259" manacost="0">
+    <health now="1300" max="1300"/>
+    <look type="368" head="45" body="65" legs="95" feet="113" corpse="11876"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+		<attack name="Sand Attack" interval="2476" chance="31" range="3"/>
+		<attack name="Drill Peck" interval="2852" chance="29" range="1"/>
+		<attack name="Wing Attack" interval="2852" chance="20" range="5"/>
+		<attack name="Whirlwind" interval="2758" chance="20" range="5"/>
+		<attack name="Peck" interval="2805" chance="29" range="3"/>
+		<attack name="Aerial Ace" interval="2805" chance="29" range="3"/>
+		<attack name="Air Cutter" interval="2805" chance="29" range="3"/>
+		<attack name="Agility" interval="2805" chance="29" range="3"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="FEAROW!"/>
+    </voices>
+    <loot>
+        <item id="2147" chance="80" countmax="25"/> <!-- rubber ball -->	
+        <item id="13874" chance="35" count="1" countmax="1"/> <!-- red wings -->	
+        <item id="12200" chance="35" count="1" countmax="1"/> <!-- feather -->
+	    <item id="2694" chance="80" countmax="15"/> <!-- straw -->	
+        <item id="12172" chance="35" count="1" countmax="1"/> <!-- bird break -->
+        <item id="11453" chance="15" count="1" countmax="1"/> <!-- heart stone -->
+		<item id="19694" chance="15" countmax="1"/> <!-- feather stone -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<npc name="Joy Hoen" script=".Joy Hoen.lua" walkinterval="3000" floorchange="0" access="5" level="100" maglevel="1">
+<health now="15" max="15"/>
+<look type="587" head="114" body="119" legs="114" feet="114" corpse="3058"/>
+
+<parameters>
+<parameter key="message_greet" value="Olá |PLAYERNAME|, eu faço viagens para o continente de Hoen, para isso preciso de um ticket de viagem e mais uma taxa de 500k, jogadores premium não pagam taxa. Você deseja comprar meu {ticket} ou {viajar}?"/>
+
+</parameters>
+</npc>

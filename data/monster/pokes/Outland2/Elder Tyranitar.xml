@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elder Tyranitar" nameDescription="a elder tyranitar" race="dark" experience="1700" speed="127" manacost="0">
+    <health now="360" max="360"/>
+  <look type="954" head="65" body="85" legs="95" feet="113" corpse="12787"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   <flag hungerdelay="15"/>
+</flags>
+ <attacks>
+        <attack name="melee" interval="2000" chance="100" range="1" min="-26" max="-49"/>
+	<attack name="Rock Throw" interval="2076" chance="31" range="6"/>
+        <attack name="Rock Slide" interval="2064" chance="30" range="6"/>
+        <attack name="Crunch" interval="2052" chance="29" range="3"/>
+        <attack name="Stone Edge" interval="2040" chance="28" range="6"/>
+	<attack name="Earthquake" interval="4040" chance="25" range="5"/>
+        <attack name="Hyper Beam" interval="4016" chance="25" range="5"/>
+        <attack name="Scary Face" interval="3040" chance="20" range="4"/>
+	    </attacks>
+  <voices interval="5000" chance="10">
+	<voice sentence="TYYY!"/>
+<voice sentence="RANITAAR!"/>
+<voice sentence="TYRANITAR!"/>
+  </voices>
+ <loot>
+          <item id="17310" countmax="1" chance="800"/> -- lizard tail
+	<item id="12196" countmax="1" chance="1200"/> -- stone orb
+	<item id="12337" countmax="25" chance="10000"/> -- small stone
+	<item id="17352" countmax="25" chance="10000"/> -- earth ball
+	<item id="12177" countmax="1" chance="1000"/> -- sandbag
+	<item id="12244" countmax="1" chance="150"/> -- ancient stone
+	<item id="11445" countmax="1" chance="70"/> -- rock stone
+	        <item id="15644" chance="20" count="1"/> -- mighty tokens
+	<item id="15645" chance="20" count="1" countmax="3"/> -- devoted token
+	 <item id="12338" chance="20" count="1"/> --bag box --bag box
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

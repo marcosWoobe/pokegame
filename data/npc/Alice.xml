@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Alice" script="Outfits.lua" walkinterval="350000" floorchange="0" speed="0" lookdir="2">
+<health now="150" max="150"/>
+<look type="1714" head="0" body="0" legs="0" feet="0"/>
+
+	<parameters>
+
+	<parameter key="message_greet" value="Olá |PLAYERNAME|, tenho algumas outfits para vender.. diga (Outfits) para saber o menu?!"/>
+	
+	</parameters>
+
+</npc>

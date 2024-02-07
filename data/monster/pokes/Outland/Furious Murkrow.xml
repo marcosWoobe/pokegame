@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Furious Murkrow" nameDescription="a Furious murkrow" race="dark" experience="1700" speed="310" manacost="310">
+  <health now="40" max="40"/>
+  <look type="905" head="33" body="57" legs="95" feet="113" corpse="12794"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   <flag hungerdelay="15"/>
+</flags>
+  <attacks>
+		<attack name="melee" interval="2000" chance="100" range="1" min="-51" max="-70"/>
+        <attack name="Peck" interval="2070" chance="30" range="1"/>
+        <attack name="Pursuit" interval="2011" chance="30" range="6"/>
+        <attack name="Wing Attack" interval="2005" chance="30" range="6"/>
+        <attack name="Sucker Punch" interval="2048" chance="30" range="1"/>
+        <attack name="Night Shade" interval="2584" chance="29" range="6"/>
+        <attack name="Tailwind" interval="5061" chance="15" range="3"/>
+        <attack name="Shadowave" interval="2035" chance="30" range="3"/>
+   </attacks>
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="20">
+	<voice sentence="MUURK!"/>
+<voice sentence="KROOOW!"/>
+<voice sentence="MURKROW!"/>
+  </voices>
+  <loot>
+	<item id="11450" countmax="1" chance="15"/>-- darkness stone
+	<item id="17350" chance="10000" count="1" countmax="14"/>  -- ghost essence
+	 <item id="2694" chance="10000" count="1" countmax="14"/>  -- straws
+	  <item id="17344" chance="500" count="1" countmax="1"/>  -- dark beak
+	   <item id="12200" chance="800" count="1" countmax="1"/>  -- feather
+	   	 <item id="12338" chance="1" count="1"/> --bag box --bag box
+		         <item id="15644" chance="1" count="1"/> -- mighty tokens
+	<item id="15645" chance="2" count="1" countmax="3"/> -- devoted token
+  </loot>
+<script>
+<event name="Spawn"/>
+</script>
+</monster>

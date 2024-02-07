@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Baby Bulbasaur" nameDescription="a baby bulbasaur" race="grass" experience="250" speed="207" manacost="0">
+    <health now="60" max="60"/>
+    <look type="350" head="15" body="30" legs="95" feet="113" corpse="11847"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="2000" chance="100" range="1" min="-50" max="-100"/>
+		<attack name="Tackle" interval="2476" chance="28" range="2"/>
+        <attack name="Razor Leaf" interval="2758" chance="30" range="4"/>
+		<attack name="Vine Whip" interval="2993" chance="28" range="6"/>
+		<attack name="Leech Seed" interval="4476" chance="28" range="5"/>
+        <attack name="Poison Powder" interval="5202" chance="19" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="BULBASAUR!"/>
+    </voices>
+    <loot>
+        <item id="12163" chance="10000" countmax="6"/> --seed
+			 <item id="12154" chance="100" countmax="1"/> --bulb
+			 <item id="12165" chance="10000" countmax="10"/> --bottles of poison
+        <item id="12153" chance="3000" count="1" countmax="1"/> --bag of pollem
+        <item id="12338" chance="10" count="1"/> --bag box --bag box
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

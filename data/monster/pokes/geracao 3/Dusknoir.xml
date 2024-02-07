@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dusknoir" nameDescription="a dusknoir" race="ghost" experience="1100" speed="217" manacost="0">
+    <health now="1300" max="1300"/>
+    <look type="1769" head="65" body="90" legs="95" feet="113" corpse="14770"/> 
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-50" max="-1000"/>
+        <attack name="Shadow Ball" interval="2500" chance="100" range="3"/>
+        <attack name="Night Shade" interval="3000" chance="100" range="3"/>
+		<attack name="Shadow Storm" interval="3500" chance="100" range="6"/>
+		<attack name="Nightmare" interval="4000" chance="100" range="6"/>
+		<attack name="Shadow Punch" interval="4500" chance="100" range="1"/>
+  </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Dusknoir!"/>
+    </voices>
+    <loot>
+		<item id="15073" chance="2.5" count="1"/>  <!-- Reaper Clother	 -->
+		<item id="15129" chance="10" count="1"/>  <!-- Scary Smale -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

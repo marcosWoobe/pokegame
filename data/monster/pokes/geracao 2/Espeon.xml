@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Espeon" nameDescription="an espeon" race="psychic" experience="450" speed="262" manacost="0">
+  <health now="110" max="110"/>
+  <look type="919" head="50" body="65" legs="95" feet="113" corpse="3287"/>
+	 <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Swift" interval="2250" chance="25" range="2"/>
+        <attack name="Bite" interval="2500" chance="25" range="4"/>
+        <attack name="Psywave" interval="2750" chance="25" range="6"/>
+        <attack name="Psybeam" interval="3000" chance="25" range="1"/>
+        <attack name="Psy Pulse" interval="3250" chance="25" range="5"/>
+        <attack name="Confusion" interval="3500" chance="25" range="4"/>
+        <attack name="Psychic" interval="3750" chance="25" range="6"/>
+        <attack name="Psyshock" interval="4000" chance="25" range="6"/>
+        <attack name="Miracle Eye" interval="4250" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+  <voices interval="5000" chance="10">
+	<voice sentence="ESPEE!"/>
+      <voice sentence="PEOON!"/>
+      <voice sentence="ESPEON!"/>
+  </voices>
+    <loot>
+        <item id="12194" chance="5000" count="1" countmax="1"/> <!-- future orb -->
+        <item id="12193" chance="5000" count="1" countmax="1"/>  <!-- twisted spoon -->
+		<item id="13785" chance="10000" countmax="80"/> <!-- enchanted gem -->
+        <item id="11452" chance="150" count="1" countmax="1"/> <!-- enigma stone -->
+        <item id="12338" chance="10" count="1"/> <!-- bag box -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>
+
+

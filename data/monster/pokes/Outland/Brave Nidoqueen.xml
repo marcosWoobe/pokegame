@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brave Nidoqueen" nameDescription="a brave nidoqueen" race="poison" experience="1700" speed="131" manacost="0">
+    <health now="340" max="340"/>
+    <look type="430" head="55" body="75" legs="95" feet="113" corpse="12765"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        <flag hungerdelay="13"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="2000" chance="1800" range="1" min="-50" max="-100"/>
+        <attack name="Quick Attack" interval="2069" chance="30" range="1"/>
+        <attack name="Horn Attack" interval="2093" chance="30" range="1"/>
+        <attack name="Bite" interval="2058" chance="30" range="1"/>
+        <attack name="Poison Sting" interval="2011" chance="30" range="1"/>
+        <attack name="Poison Fang" interval="2046" chance="30" range="1"/>
+        <attack name="Stomp" interval="3946" chance="10" range="6"/>
+        <attack name="Earthshock" interval="2422" chance="26" range="6"/>
+        <attack name="Strafe" interval="3792" chance="25" range="6"/>
+		<attack name="Mega Punch" interval="2492" chance="28" range="1"/>
+        <attack name="Toxic Spikes" interval="3544" chance="20" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="NIDOQUEEN!"/>
+    </voices>
+    <loot>
+       <item id="17320" chance="700" countmax="1"/> --female ear
+		 <item id="17352" chance="10000" countmax="16"/> --earth ball
+		<item id="12177" chance="2000" countmax="1"/> --sandbag
+        <item id="11443" chance="15" count="1" countmax="1"/> --venom stone
+        <item id="12165" chance="10000" countmax="16"/> --bottles of poison
+        <item id="12338" chance="1" count="1"/> --bag box --bag box
+		        <item id="15644" chance="1" count="1"/> -- mighty tokens
+	<item id="15645" chance="2" count="1" countmax="3"/> -- devoted token
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

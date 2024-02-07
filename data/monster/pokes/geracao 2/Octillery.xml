@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Octillery" nameDescription="an octillery" race="water" experience="650" speed="224" manacost="0">
+    <health now="100" max="100"/>
+  <look type="931" head="15" body="35" legs="95" feet="113" corpse="3582"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Ice Beam" interval="2250" chance="25" range="2"/>
+        <attack name="Water Gun" interval="2500" chance="25" range="4"/>
+        <attack name="Waterball" interval="2750" chance="25" range="6"/>
+        <attack name="Bubblebeam" interval="3000" chance="25" range="1"/>
+        <attack name="Aurora Beam" interval="3250" chance="25" range="5"/>
+        <attack name="Hyper Beam" interval="3500" chance="25" range="4"/>
+        <attack name="Octazooka" interval="3750" chance="25" range="6"/>
+        <attack name="Surf" interval="4000" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+<voices interval="5000" chance="10">
+	<voice sentence="OCTIII!"/>
+<voice sentence="LLERYY!"/>
+<voice sentence="OCTILLERY!"/>
+  </voices>
+ <loot>
+        <item id="12161" chance="80" countmax="30"/> <!-- water gem -->
+        <item id="13866" chance="35" count="1" countmax="1"/> <!-- tentacle -->
+        <item id="12202" chance="35" count="1" countmax="1"/> <!-- gosme -->	
+        <item id="12170" chance="35" count="1" countmax="1"/> <!-- water pendant -->
+        <item id="11442" chance="15" count="1" countmax="1"/> <!-- water stone -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

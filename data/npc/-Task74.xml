@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Jan" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="150" max="150"/>
+	<look type="517" head="245" body="88" legs="78" feet="84"/>
+</npc>

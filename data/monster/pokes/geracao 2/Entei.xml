@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Entei" nameDescription="an entei" race="fire2" experience="10000" speed="340" manacost="0">
+  <health now="40" max="40"/>
+  <look type="956" head="90" body="100" legs="95" feet="113" corpse="0"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+<script>
+<event name="Spawn"/>
+</script>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Dragon Claw" interval="2250" chance="25" range="2"/>
+        <attack name="Ember" interval="2500" chance="25" range="4"/>
+        <attack name="Flamethrower" interval="2750" chance="25" range="6"/>
+        <attack name="Fireball" interval="3000" chance="25" range="1"/>
+        <attack name="Fire Fang" interval="3250" chance="25" range="5"/>
+        <attack name="Raging Blast" interval="3500" chance="25" range="4"/>
+        <attack name="Fire Blast" interval="3750" chance="25" range="6"/>
+        <attack name="Wing Attack" interval="4000" chance="25" range="6"/>
+        <attack name="Magma Storm" interval="4250" chance="25" range="6"/>
+		<attack name="Scary Face" interval="4500" chance="25" range="6"/>
+    </attacks>
+  <defenses armor="0" defense="0"/>
+<voices interval="5000" chance="10">
+	<voice sentence="EEEN!"/>
+<voice sentence="TEEEI!"/>
+<voice sentence="ENTEI!"/>
+  </voices>
+  <loot>
+  </loot>
+</monster>

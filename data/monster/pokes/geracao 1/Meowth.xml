@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Meowth" nameDescription="a meowth" race="normal" experience="100" speed="227" manacost="0">
+    <health now="400" max="400"/>
+    <look type="456" head="10" body="30" legs="95" feet="113" corpse="11917"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Slash" interval="2711" chance="30" range="1"/>
+        <attack name="Bite" interval="2758" chance="30" range="1"/>
+        <attack name="Pay Day" interval="2899" chance="29" range="3"/>
+		<attack name="Night Slash" interval="3322" chance="26" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="MEOWTH!"/>
+    </voices>
+    <loot>
+        <item id="2147" chance="80" countmax="10"/> <!-- rubber ball -->	
+        <item id="12187" chance="35" count="1" countmax="1"/> <!-- wool ball -->
+        <item id="17356" chance="35" count="1" countmax="1"/> <!-- luck medalion -->
+        <item id="12157" chance="35" count="1" countmax="1"/> <!-- nail -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

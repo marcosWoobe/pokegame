@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mew" nameDescription="a mew" race="psychic" experience="1000" speed="317" manacost="0">
+    <health now="120" max="120"/>
+    <look type="360" head="100" body="100" legs="95" feet="113" corpse="11919"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="3"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="physical" interval="2000" chance="100" range="4" min="-50" max="-100">
+            <attribute key="shootEffect" value="eartharrow"/>
+        </attack>
+        <attack name="Restore" interval="4920" chance="20" range="6"/>
+        <attack name="Solar Beam" interval="3275" chance="26" range="6"/>
+        <attack name="Hydro Cannon" interval="5625" chance="18" range="6"/>
+        <attack name="Psychic" interval="3510" chance="25" range="6"/>
+		<attack name="Thunder Bolt" interval="5510" chance="25" range="3"/>
+		<attack name="Shadow Ball" interval="5610" chance="25" range="4"/>
+		<attack name="Reflect" interval="4510" chance="20" range="6"/>
+		<attack name="Bubble Blast" interval="3322" chance="26" range="6"/>
+		<attack name="Metronome" interval="3322" chance="26" range="6"/>
+		<attack name="Flamethrower" interval="3322" chance="26" range="6"/>
+		<attack name="Barrier" interval="3322" chance="26" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="MEW!"/>
+    </voices>
+    <loot>
+        <item id="11452" chance="1000" count="1" countmax="1"/> <!-- Enigma Stone -->
+        <item id="12338" chance="10" count="1"/> <!-- bag box -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

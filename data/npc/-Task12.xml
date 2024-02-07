@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Escobar" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="297" max="150"/>
+	<look type="9" head="203" body="71" legs="155" feet="50"/>
+</npc>

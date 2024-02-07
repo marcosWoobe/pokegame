@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Pedro Pescador" script="data/npc/scripts/Taskkill.lua" walkinterval="350000" floorchange="0" speed="0">
+	<health now="150" max="150"/>
+	<look type="520" head="89" body="68" legs="180" feet="190"/>
+	<parameters>
+	<parameter key="message_greet" value="Olá |PLAYERNAME|, estou fazendo uma pesquisa e preciso de ajuda para derrotar alguns pokemons e analisar seu poder, pode me ajudar?"/>
+	</parameters>
+</npc>

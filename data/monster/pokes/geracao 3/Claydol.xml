@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Claydol" nameDescription="a claydol" race="psychic" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1813" head="65" body="90" legs="95" feet="113" corpse="14767"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+		<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+		<attack name="Mud Sport" interval="2617" chance="42" range="4"/>
+        <attack name="Extrasensory" interval="2250" chance="25" range="2"/>
+        <attack name="Psybeam" interval="2500" chance="25" range="4"/>
+        <attack name="Psyshock" interval="2750" chance="25" range="6"/>
+        <attack name="Earth Power" interval="3000" chance="25" range="1"/>
+        <attack name="Earthquake" interval="3250" chance="25" range="5"/>
+        <attack name="Sand Storm" interval="3500" chance="25" range="4"/>
+        <attack name="Heal Block" interval="3750" chance="25" range="6"/>
+        <attack name="Guard Split" interval="4000" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Claydol!"/>
+    </voices>
+    <loot>
+        <item id="12177" chance="35" count="1" countmax="2"/> <!-- sandbag -->
+        <item id="12194" chance="35" count="1" countmax="1"/> <!-- future orb -->	
+		<item id="13785" chance="80" countmax="30"/> <!-- enchanted gem -->		
+        <item id="17352" chance="80" countmax="30"/> <!-- earth ball -->   		
+		<item id="15098" chance="35" count="1"/> <!-- pawn -->
+        <item id="11451" chance="17" count="1"/> <!-- earth stone -->
+        <item id="11452" chance="17" count="1"/> <!-- enigma stone -->		
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

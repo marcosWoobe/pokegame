@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Shiny Steelix" nameDescription="a shiny steelix" race="steel" experience="1100" speed="299" manacost="0">
+  <health now="40" max="40"/>
+  <look type="2701" head="70" body="88" legs="95" feet="113" corpse="19897"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+		<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Iron Tail" interval="2250" chance="25" range="2"/>
+        <attack name="Iron Head" interval="2500" chance="25" range="4"/>
+        <attack name="Sand Tomb" interval="2750" chance="25" range="6"/>
+        <attack name="Rock Tomb" interval="3000" chance="25" range="1"/>
+        <attack name="Stone Edge" interval="3250" chance="25" range="5"/>
+        <attack name="Earth Power" interval="3500" chance="25" range="4"/>
+        <attack name="Fissure" interval="3750" chance="25" range="6"/>
+        <attack name="Earthquake" interval="4000" chance="25" range="6"/>
+        <attack name="Harden" interval="4250" chance="25" range="6"/>
+  </attacks>
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="10">
+	<voice sentence="STEEE!"/>
+	<voice sentence="LIIX!"/>
+	<voice sentence="STEELIX!"/>
+  </voices>
+  <loot>
+    <item id="11451" chance="30" count="1" countmax="1"/> <!-- earth stone -->
+    <item id="17352" chance="80" countmax="30"/> <!-- earth ball -->   
+    <item id="12232" chance="30" count="1" countmax="1"/> <!-- metal stone -->
+    <item id="12177" chance="35" count="1" countmax="1"/> <!-- sandbag -->
+    <item id="17288" chance="12" count="1" countmax="1"/> <!-- steelix tail -->
+    <item id="17347" chance="80" count="1" countmax="30"/> <!-- piece of steel -->
+	  <item id="12401" chance="0.1" count="1"/> <!-- shiny stone -->
+  </loot>
+<script>
+<event name="Spawn"/>
+</script>
+</monster>

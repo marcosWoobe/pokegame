@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wurmple" nameDescription="a wurmple" race="bug" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="2245" head="65" body="90" legs="95" feet="113" corpse="25310"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+		<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Tackle" interval="2250" chance="25" range="2"/>
+        <attack name="Bug Bite" interval="2500" chance="25" range="4"/>
+        <attack name="String Shot" interval="2750" chance="25" range="6"/>
+        <attack name="Poison Sting" interval="3000" chance="25" range="1"/>
+	</attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Shedinja!"/>
+    </voices>
+    <loot>
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

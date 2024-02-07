@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crobat" nameDescription="a crobat" race="poison" experience="1100" speed="255" manacost="0">
+  <health now="140" max="140"/>
+  <look type="1454" head="55" body="68" legs="95" feet="113" corpse="3279"/>
+	<strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+    <attacks>
+        <attack name="melee" interval="900" chance="100" range="1" min="-100" max="-450"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+  <voices interval="5000" chance="10">
+	<voice sentence="CROO!"/>
+<voice sentence="BAAT!"/>
+<voice sentence="CROBAT!"/>
+</voices>
+    <loot>
+        <item id="12165" chance="80" countmax="20"/>  <!-- bottles of poison -->
+        <item id="12175" chance="35" count="1" countmax="1"/> <!-- tooth -->
+	    <item id="2694" chance="80" countmax="40"/> <!-- straw -->	
+        <item id="17267" chance="35" count="1" countmax="1"/> <!-- giant bat wing -->
+        <item id="12282" chance="35" countmax="1"/>  <!-- venom pendant -->
+        <item id="11443" chance="15" count="1" countmax="1"/> <!-- venom stone -->		
+        <item id="12244" chance="10" count="1" countmax="1"/> <!-- ancient stone -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>
+

@@ -1,0 +1,598 @@
+<?xml version="1.0"?>
+<pokeoutfits>
+<!-- ADDONS -->
+<pokeoutfit id="1">
+<list gender="1" lookType="22" name="Blue Cap"/> 
+</pokeoutfit>
+<pokeoutfit id="2">
+<list gender="1" lookType="23" name="Red Cap"/> 
+</pokeoutfit>
+<pokeoutfit id="3">
+<list gender="1" lookType="24" name="Beautiful Flower"/> 
+</pokeoutfit>
+
+<!-- ivysaur -->
+<!-- venusaur -->
+<pokeoutfit id="4">
+<list gender="1" lookType="240" ride="241" name="Beautiful Flower"/> 
+</pokeoutfit>
+<pokeoutfit id="5">
+<list gender="1" lookType="243" ride="242" name="Scar Makeup"/> 
+</pokeoutfit>
+<!-- charmander -->
+<pokeoutfit id="6">
+<list gender="1" lookType="33" name="Mummy Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="7">
+<list gender="1" lookType="34" name="Ninja Mask"/> 
+</pokeoutfit>
+<!-- charmeleon -->
+<!-- charizard -->
+<pokeoutfit id="8">
+<list gender="1" lookType="27" fly="35" name="Charla Flower"/> 
+</pokeoutfit>
+<pokeoutfit id="9">
+<list gender="1" lookType="28" fly="36" name="Traveler Bag"/> 
+</pokeoutfit>
+<pokeoutfit id="10">
+<list gender="1" lookType="238" fly="239" name="Viktor"/> 
+</pokeoutfit>
+<!-- squirtle -->
+<pokeoutfit id="11">
+<list gender="1" lookType="218" surf="246" name="Blue Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="12">
+<list gender="1" lookType="219" surf="221" name="Red Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="13">
+<list gender="1" lookType="220" surf="247" name="Orange Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="14">
+<list gender="1" lookType="244" surf="245" name="Purple Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="15">
+<list gender="1" lookType="647" surf="261" name="oculos ponta"/> 
+</pokeoutfit>
+<pokeoutfit id="16">
+<list gender="1" lookType="648" surf="260" name="Squad Jacket"/> 
+</pokeoutfit>
+<!-- wartlote -->
+<!-- blastoise -->
+<pokeoutfit id="17">
+<list gender="1" lookType="17" surf="262" name="Sword Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="18">
+<list gender="1" lookType="18" surf="265" name="Staff Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="19">
+<list gender="1" lookType="19" surf="263" name="Sai Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="20">
+<list gender="1" lookType="20" surf="264" name="Nunchaku Ninja Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="21">
+<list gender="1" lookType="21" surf="266" name="Scar Makeup"/> 
+</pokeoutfit>
+<pokeoutfit id="22">
+<list gender="1" lookType="225" surf="226" name="Viktor"/> 
+</pokeoutfit>
+<!-- cartepie -->
+<pokeoutfit id="23">
+<list gender="1" lookType="25" name="Green Beret"/> 
+</pokeoutfit>
+<!-- metapod -->
+<!-- burtefree -->
+<!-- kakuna -->
+<!-- beedrill -->
+<!-- Pidgey -->
+<pokeoutfit id="24">
+<list gender="1" lookType="187" name="Zombie Cap"/> 
+</pokeoutfit>
+<pokeoutfit id="25">
+<list gender="1" lookType="188" name="Fantasy Hat"/> 
+</pokeoutfit>
+<pokeoutfit id="26">
+<list gender="1" lookType="190" name="Bone Cap"/> 
+</pokeoutfit>
+<!-- Pidgeotto -->
+<pokeoutfit id="27">
+<list gender="1" lookType="185" name="Flying Glasses"/> 
+</pokeoutfit>
+<!-- Pidgeot -->
+<pokeoutfit id="28">
+<list gender="1" lookType="179" fly="186" name="Flying Glasses"/> 
+</pokeoutfit>
+<pokeoutfit id="29">
+<list gender="1" lookType="181" fly="183" name="Green Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="30">
+<list gender="1" lookType="182" fly="184" name="Purple Scarf"/> 
+</pokeoutfit>
+<!-- rattata -->
+<pokeoutfit id="31">
+<list gender="1" lookType="204" name="Shower Cap"/> 
+</pokeoutfit>
+<!-- raticate -->
+<pokeoutfit id="32">
+<list gender="1" lookType="205" name="Splinter Kimono"/> 
+</pokeoutfit>
+<!-- spearow -->
+<!-- fearow -->
+<pokeoutfit id="33">
+<list gender="1" lookType="79" fly="82" name="Green Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="34">
+<list gender="1" lookType="80" fly="83" name="Yellow Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="35">
+<list gender="1" lookType="81" fly="84" name="Red Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="36">
+<list gender="1" lookType="85" fly="86" name="Viktor"/> 
+</pokeoutfit>
+<pokeoutfit id="37">
+<list gender="1" lookType="257" fly="88" name="Viktor"/> 
+</pokeoutfit>
+<!-- ekans -->
+<!-- arbok -->
+<pokeoutfit id="38">
+<list gender="1" lookType="11" name="Pink Bow"/> 
+</pokeoutfit>
+<pokeoutfit id="39">
+<list gender="1" lookType="12" name="Yellow Bow"/> 
+</pokeoutfit>
+<!-- pikachu -->
+<pokeoutfit id="40">
+<list gender="1" lookType="192" name="Ghost Costume"/> 
+</pokeoutfit>
+<pokeoutfit id="41">
+<list gender="1" lookType="193" name="Orange Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="42">
+<list gender="1" lookType="194" name="Green Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="43">
+<list gender="1" lookType="195" name="Jester Hat"/> 
+</pokeoutfit>
+<pokeoutfit id="44">
+<list gender="1" lookType="196" name="Blue Scarf"/> 
+</pokeoutfit>
+<!-- raichu -->
+<pokeoutfit id="45">
+<list gender="1" lookType="200" name="Greek Costume"/> 
+</pokeoutfit>
+<pokeoutfit id="46">
+<list gender="1" lookType="201" name="Pirate Costume"/> 
+</pokeoutfit>
+<pokeoutfit id="47">
+<list gender="1" lookType="202" name="Scar Makeup"/> 
+</pokeoutfit>
+<pokeoutfit id="48">
+<list gender="1" lookType="203" name="God of Olympus Costume"/> 
+</pokeoutfit>
+<!-- sandshrew -->
+<pokeoutfit id="49">
+<list gender="1" lookType="210" name="Bone Cap"/> 
+</pokeoutfit>
+<!-- sandslash -->
+<pokeoutfit id="50">
+<list gender="1" lookType="207" name="Metal Claw"/> 
+</pokeoutfit>
+<pokeoutfit id="51">
+<list gender="1" lookType="208" name="Old Man Glasses"/> 
+</pokeoutfit>
+<pokeoutfit id="52">
+<list gender="1" lookType="209" name="Z-Kimono"/> 
+</pokeoutfit>
+<!-- nidoran -->
+<!-- nidorina -->
+<!-- nidoqueen -->
+<!-- nidoran -->
+<!-- nidorino -->
+<!-- nidoking -->
+<!-- clefairy -->
+<!-- clefable -->
+<pokeoutfit id="53">
+<list gender="1" lookType="32" name="Angel Halo"/> 
+</pokeoutfit>
+<pokeoutfit id="54">
+<list gender="1" lookType="41" name="Clown Nose"/> 
+</pokeoutfit>
+<!-- vulpix -->
+<!-- ninetales -->
+<!-- jigglypuff -->
+<!-- wigglytuff -->
+<pokeoutfit id="55">
+<list gender="1" lookType="235" name="Singer Microphone"/> 
+</pokeoutfit>
+<pokeoutfit id="56">
+<list gender="1" lookType="236" name="Ice Cream"/> 
+</pokeoutfit>
+<!-- zubat -->
+<!-- golbat -->
+<pokeoutfit id="57">
+<list gender="1" lookType="107" name="Roman Helmet"/> 
+</pokeoutfit>
+<!-- oddish -->
+<!-- gloom -->
+<!-- vileplume -->
+<!-- paras -->
+<!-- parasect -->
+<!-- venonat -->
+<!-- digglet -->
+<pokeoutfit id="58">
+<list gender="1" lookType="38" name="Viking Helmet"/> 
+</pokeoutfit>
+<pokeoutfit id="59">
+<list gender="1" lookType="39" name="Cowboy Hat"/> 
+</pokeoutfit>
+<pokeoutfit id="60">
+<list gender="1" lookType="47" name="Ninja Mask"/> 
+</pokeoutfit>
+<!-- dugtrio -->
+<pokeoutfit id="61">
+<list gender="1" lookType="40" name="Squad Costume"/> 
+</pokeoutfit>
+<!-- meowth -->
+<pokeoutfit id="62">
+<list gender="1" lookType="164" name="Freddy Krueger Costume"/> 
+</pokeoutfit>
+<!-- persian -->
+<!-- psyduck -->
+<pokeoutfit id="63">
+<list gender="1" lookType="199" name="Frankenstein Cap"/> 
+</pokeoutfit>
+<!-- golduck -->
+<pokeoutfit id="64">
+<list gender="1" lookType="108" name="Red Karate Headband"/> 
+</pokeoutfit>
+<pokeoutfit id="65">
+<list gender="1" lookType="109" name="Yellow Karate Headband"/> 
+</pokeoutfit>
+<pokeoutfit id="66">
+<list gender="1" lookType="110" name="Black Karate Headband	"/> 
+</pokeoutfit>
+<pokeoutfit id="67">
+<list gender="1" lookType="111" name="Gentleman Clothes"/> 
+</pokeoutfit>
+<!-- mankey -->
+<pokeoutfit id="68">
+<list gender="1" lookType="162" name="Banana"/> 
+</pokeoutfit>
+<!-- primeape -->
+<pokeoutfit id="69">
+<list gender="1" lookType="197" name="True Champion Belt"/> 
+</pokeoutfit>
+<!-- growlithe -->
+<!-- arcanine -->
+<pokeoutfit id="70">
+<list gender="1" lookType="13" ride="14" name="Battle Armor"/> 
+</pokeoutfit>
+<!-- poliwag -->
+<!-- poliwhril -->
+<!-- poliwrath -->
+<pokeoutfit id="71">
+<list gender="1" lookType="198" surf="253" name="Yellow Belt Karate Kimono"/> 
+</pokeoutfit>
+<pokeoutfit id="72">
+<list gender="1" lookType="232" surf="252" name="Dragon Karate Kimono"/> 
+</pokeoutfit>
+<pokeoutfit id="73">
+<list gender="1" lookType="237" surf="254" name="Green Belt Karate Kimono"/> 
+</pokeoutfit>
+<!-- abra -->
+<!-- kadabra -->
+<!-- alakazam -->
+<pokeoutfit id="74">
+<list gender="1" lookType="2152" name="Indiana Jones Costume"/> 
+</pokeoutfit>
+<pokeoutfit id="75">
+<list gender="1" lookType="2147" name="Mage Hat"/> 
+</pokeoutfit>
+<pokeoutfit id="76">
+<list gender="1" lookType="3" name="Scar Makeup"/> 
+</pokeoutfit>
+<pokeoutfit id="77">
+<list gender="1" lookType="4" name="Wizard Hat"/> 
+</pokeoutfit>
+<pokeoutfit id="78">
+<list gender="1" lookType="9" name="Warlock Hat"/> 
+</pokeoutfit>
+<!-- machop -->
+<pokeoutfit id="79">
+<list gender="1" lookType="151" name="Wrestling Mask"/> 
+</pokeoutfit>
+<!-- machoke -->
+<!-- machamp -->
+<pokeoutfit id="80">
+<list gender="1" lookType="152" name="Gladiator Helmet"/> 
+</pokeoutfit>
+<!-- bellsprout -->
+<!-- weepinbell -->
+<!-- victreebel -->
+<!-- tentacool -->
+<!-- tentacruel -->
+<!-- geodude -->
+<pokeoutfit id="81">
+<list gender="1" lookType="106" name="Kid Cap"/> 
+</pokeoutfit>
+<!-- graveler -->
+<!-- golem -->
+<!-- Ponyta -->	
+<!-- Rapidash -->	
+<!-- Slowpoke -->	
+<!-- Slowbro -->
+<!-- Magnemite -->	
+<!-- Magneton -->	
+<!-- Farfetch'd -->	
+<!-- Doduo -->
+<!-- Dodrio -->
+<!-- Seel -->
+<!-- Dewgong -->
+<!-- Grimer -->
+<!-- Muk -->
+
+<!-- Shellder -->
+<!-- Cloyster -->
+<!-- Gastly -->
+<!-- Haunter -->
+<pokeoutfit id="82">
+<list gender="1" lookType="92" name="Eye Patch"/> 
+</pokeoutfit>
+<pokeoutfit id="83">
+<list gender="1" lookType="93" name="Ghost Costume"/> 
+</pokeoutfit>
+<!-- Gengar -->
+<pokeoutfit id="84">
+<list gender="1" lookType="96" name="Green Bandana"/> 
+</pokeoutfit>
+<pokeoutfit id="85">
+<list gender="1" lookType="97" name="Black Bandana"/> 
+</pokeoutfit>
+<pokeoutfit id="86">
+<list gender="1" lookType="100" name="Purple Bandana"/> 
+</pokeoutfit>
+<pokeoutfit id="87">
+<list gender="1" lookType="101" name="Pirate Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="88">
+<list gender="1" lookType="102" name="Scar Makeup"/> 
+</pokeoutfit>
+<!-- onix -->
+<!-- drowzee -->
+<!-- hypno -->
+<pokeoutfit id="89">
+<list gender="1" lookType="136" name="Ruby Turban"/> 
+</pokeoutfit>
+<pokeoutfit id="90">
+<list gender="1" lookType="137" name="Emerald Turban"/> 
+</pokeoutfit>
+<!-- krabby -->
+<!-- kingler -->
+<!-- voltorb -->
+<!-- electrode -->
+<!-- exeggcute -->
+<!-- exeggutor -->
+<!-- cubone -->
+<pokeoutfit id="91">
+<list gender="1" lookType="37" name="Pumpkin Head"/> 
+</pokeoutfit>
+<!-- marowak -->
+<pokeoutfit id="92">
+<list gender="1" lookType="44" name="Pumpkin Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="93">
+<list gender="1" lookType="163" name="Reaper costume"/> 
+</pokeoutfit>
+<!-- hitmolee -->
+<!-- hitmochan -->
+<!-- elite hitmochan -->
+<pokeoutfit id="94">
+<list gender="1" lookType="127" name="Batsuit"/> 
+</pokeoutfit>
+<!-- lickitung -->
+<!-- koffing -->
+<!-- weezing -->
+<!-- rhyhorn -->
+<!-- rhydon -->
+<!-- chnsey -->
+<pokeoutfit id="95">
+<list gender="1" lookType="26" name="blu"/> 
+</pokeoutfit>
+<pokeoutfit id="96">
+<list gender="1" lookType="29" name="blu"/> 
+</pokeoutfit>
+<pokeoutfit id="97">
+<list gender="1" lookType="30" name="Nurse Costume"/> 
+</pokeoutfit>
+<pokeoutfit id="98">
+<list gender="1" lookType="31" name="blu"/> 
+</pokeoutfit>
+<!-- tangela -->
+<pokeoutfit id="99">
+<list gender="1" lookType="222" name="Fake Fork"/> 
+</pokeoutfit>
+<pokeoutfit id="100">
+<list gender="1" lookType="223" name="Jester Hat"/> 
+</pokeoutfit>
+<pokeoutfit id="101">
+<list gender="1" lookType="224" name="Ghost Costume"/> 
+</pokeoutfit>
+<!-- kangaskhan -->
+<pokeoutfit id="102">
+<list gender="1" lookType="140" name="Cowgirl Hat"/> 
+</pokeoutfit>
+<!-- horsea -->
+<!-- seadra -->
+<!-- goldeen -->
+<!-- seaking -->
+<!-- staryu -->
+<!-- starmie --> 
+<!-- mr. mime -->
+<pokeoutfit id="103">
+<list gender="1" lookType="172" name="Green Apron"/> 
+</pokeoutfit>
+<pokeoutfit id="104">
+<list gender="1" lookType="173" name="Magician Hat"/> 
+</pokeoutfit>
+<!-- scyther -->
+<pokeoutfit id="105">
+<list gender="1" lookType="211" name="Black Cape"/> 
+</pokeoutfit>
+<pokeoutfit id="106">
+<list gender="1" lookType="213" name="Monk Cape"/> 
+</pokeoutfit>
+<pokeoutfit id="107">
+<list gender="1" lookType="215" name="Scar Makeup"/> 
+</pokeoutfit>
+<!-- jynx -->
+<pokeoutfit id="108">
+<list gender="1" lookType="138" name="Wedding dress"/> 
+</pokeoutfit>
+<pokeoutfit id="109">
+<list gender="1" lookType="139" name="Witch costume"/> 
+</pokeoutfit>
+<!-- electabuzz -->
+<pokeoutfit id="110">
+<list gender="1" lookType="63" name="Thor Costume"/> 
+</pokeoutfit>
+<pokeoutfit id="111">
+<list gender="1" lookType="64" name="Bandit Mask"/> 
+</pokeoutfit>
+<pokeoutfit id="112">
+<list gender="1" lookType="65" name="Metal Pack"/> 
+</pokeoutfit>
+<pokeoutfit id="113">
+<list gender="1" lookType="66" name="Raiden Hat"/> 
+</pokeoutfit>
+<!-- magmar -->
+<pokeoutfit id="114">
+<list gender="1" lookType="153" name="Blue Scouter"/> 
+</pokeoutfit>
+<pokeoutfit id="115">
+<list gender="1" lookType="154" name="Scar Makeup"/> 
+</pokeoutfit>
+<pokeoutfit id="116">
+<list gender="1" lookType="155" name="Green Scouter"/> 
+</pokeoutfit>
+<pokeoutfit id="117">
+<list gender="1" lookType="159" name="Viktor"/> 
+</pokeoutfit>
+<!-- pinsir -->
+<!-- Tauros -->
+<!-- Magikarp -->
+<!--Gyarados-->
+<pokeoutfit id="118">
+<list gender="1" lookType="115" surf="122" name="Oriental Dragon Mask"/> 
+</pokeoutfit>
+<pokeoutfit id="119">
+<list gender="1" lookType="116" surf="123" name="Red Dragon Mask"/> 
+</pokeoutfit>
+<pokeoutfit id="120">
+<list gender="1" lookType="117" surf="124" name="Retro Dragon Mask"/> 
+</pokeoutfit>
+<pokeoutfit id="121">
+<list gender="1" lookType="118" surf="120" name="Scar Makeup"/> 
+</pokeoutfit>
+<pokeoutfit id="122">
+<list gender="1" lookType="119" surf="121" name="Bloody Makeup"/> 
+</pokeoutfit>
+<!-- Lapras -->
+<pokeoutfit id="123">
+<list gender="1" lookType="144" surf="267" name="Pearl Necklace"/> 
+</pokeoutfit>
+<pokeoutfit id="124">
+<list gender="1" lookType="145" surf="268" name="Water Pendant"/> 
+</pokeoutfit>
+<pokeoutfit id="125">
+<list gender="1" lookType="146" surf="269" name="Pink Shell"/> 
+</pokeoutfit>
+<pokeoutfit id="126">
+<list gender="1" lookType="147" surf="270" name="Yellow Shell"/> 
+</pokeoutfit>
+<pokeoutfit id="127">
+<list gender="1" lookType="148" surf="271" name="Dark Pendant"/> 
+</pokeoutfit>
+<pokeoutfit id="128">
+<list gender="1" lookType="227" surf="228" name="Viktor"/> 
+</pokeoutfit>
+<!-- Ditto -->
+<!-- Eevee -->
+<!-- vaporeon -->
+<!-- jolteon -->
+<!-- flareon -->
+<!-- porygon -->
+<!-- omanyte -->
+<!-- omastar -->
+<!-- kabuto -->
+<!-- kabutops -->
+<!-- aerodactyl -->
+<!-- snorlax -->
+<pokeoutfit id="129">
+<list gender="1" lookType="149" surf="" name="Bear Cap"/> 
+</pokeoutfit>
+<pokeoutfit id="130">
+<list gender="1" lookType="150" surf="" name="Polar Bear Cap"/> 
+</pokeoutfit>
+<pokeoutfit id="131">
+<list gender="1" lookType="217" surf="" name="Obelix Costume"/> 
+</pokeoutfit>
+<!-- articuno -->
+<!-- zapdos -->
+<!-- moltres -->
+<!-- dratini -->
+<!-- dragonair -->
+<!-- dragonite -->
+<pokeoutfit id="132">
+<list gender="1" lookType="48" fly="49" name="Blue Postman Bag"/> 
+</pokeoutfit>
+<pokeoutfit id="133">
+<list gender="1" lookType="50" fly="51" name="Gray Postman Bag"/> 
+</pokeoutfit>
+<pokeoutfit id="134">
+<list gender="1" lookType="52" fly="53" name="Red Postman Bag"/> 
+</pokeoutfit>
+<pokeoutfit id="135">
+<list gender="1" lookType="54" fly="55" name="Red Dragon Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="136">
+<list gender="1" lookType="56" fly="57" name="Green Dragon Scarf"/> 
+</pokeoutfit>
+<pokeoutfit id="137">
+<list gender="1" lookType="58" fly="" name="Yellow Dragon Scarf"/> 
+</pokeoutfit>
+<!-- mewtow -->
+<!-- mew -->
+
+
+
+
+
+<pokeoutfit id="138">
+<list gender="1" lookType="2157" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="139">
+<list gender="1" lookType="2158" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="140">
+<list gender="1" lookType="2159" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="141">
+<list gender="1" lookType="2161" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="142">
+<list gender="1" lookType="2162" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="143">
+<list gender="1" lookType="2164" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="144">
+<list gender="1" lookType="2165" fly="" name="Christmas"/> 
+</pokeoutfit>
+<pokeoutfit id="145">
+<list gender="1" lookType="2166" fly="" name="Christmas"/>  
+</pokeoutfit>
+<pokeoutfit id="146">
+<list gender="1" lookType="2167" fly="" name="Christmas"/> 
+</pokeoutfit>
+</pokeoutfits>

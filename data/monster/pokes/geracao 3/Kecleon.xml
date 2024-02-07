@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kecleon" nameDescription="a Kecleon " race="normal" experience="500" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1972" head="43" body="60" legs="95" feet="113" corpse="15654"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+	    <attack name="Lick" interval="2250" chance="30" range="4"/>
+        <attack name="Shadow Ball" interval="2500" chance="29" range="3"/>
+		<attack name="Fury Swipes" interval="2750" chance="29" range="1"/> 
+		<attack name="Sucker Punch" interval="3000" chance="29" range="1"/>
+        <attack name="Shadow Sneak" interval="3500" chance="29" range="6"/>
+        <attack name="Ancient Power" interval="3750" chance="18" range="3"/>
+		<attack name="Shadow Claw" interval="4000" chance="18" range="2"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Kecleon!"/>
+    </voices>
+    <loot>
+        <item id="11453" chance="15" count="1" countmax="1"/> <!-- Heart Stone -->
+		<item id="12244" chance="12" count="1" countmax="1"/> <!-- Ancient Stone -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

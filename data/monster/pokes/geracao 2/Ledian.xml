@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ledian" nameDescription="a ledian" race="bug" experience="350" speed="252" manacost="0">
+    <health now="100" max="100"/>
+  <look type="685" head="15" body="35" legs="95" feet="113" corpse="3562"/>
+	<targetchange interval="2000" chance="0"/>
+<strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+ <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Quick Attack" interval="2250" chance="25" range="2"/>
+        <attack name="Super Sonic" interval="2500" chance="25" range="4"/>
+        <attack name="Swift" interval="2750" chance="25" range="6"/>
+        <attack name="Silver Wind" interval="3000" chance="25" range="1"/>
+        <attack name="Struggle Bug" interval="3250" chance="25" range="5"/>
+        <attack name="Bug Buzz" interval="3500" chance="25" range="4"/>
+        <attack name="Reflect" interval="3750" chance="25" range="6"/>
+        <attack name="Agility" interval="4000" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+  <voices interval="5000" chance="10">
+	<voice sentence="LEEEDI!"/>
+<voice sentence="DIAAN!"/>
+<voice sentence="LEDIAN!"/>
+  </voices>
+ <loot>
+        <item id="11448" chance="15" count="1" countmax="1"/> <!-- coccon stone -->
+        <item id="12171" chance="35" count="1" countmax="1"/> <!-- pot of moss bug -->
+	    <item id="2694" chance="80" countmax="20"/> <!-- straw -->	
+		<item id="13783" chance="80" countmax="20"/> <!-- bug gosme -->
+        <item id="13884" chance="35" count="1" countmax="1"/>  <!-- ladybug wing -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

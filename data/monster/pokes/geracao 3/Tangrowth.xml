@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tangrowth" nameDescription="a Kirlia " race="ghost" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1774" head="65" body="90" legs="95" feet="113" corpse="14794"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+		<attack name="melee" interval="1500" chance="100" range="1" min="-50" max="-1000"/>
+		<attack name="Absorb" interval="2500" chance="100" range="2"/>
+        <attack name="Leech Seed" interval="3000" chance="100" range="4"/>
+        <attack name="Vine Whip" interval="3500" chance="100" range="6"/>
+        <attack name="Super Vines" interval="4000" chance="100" range="1"/>
+        <attack name="Wrap" interval="4500" chance="100" range="5"/>
+        <attack name="Vine Hook" interval="5000" chance="100" range="4"/>
+        <attack name="Constrict Wave" interval="5500" chance="100" range="6"/>
+        <attack name="Constrict Prison" interval="6000" chance="100" range="6"/>
+		<attack name="Poison Powder" interval="6500" chance="100" range="6"/>
+		<attack name="Stun Spore" interval="7000" chance="100" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Tangrowth!"/>
+    </voices>
+    <loot>
+        <item id="15076" chance="2.5" count="1"/> <!-- Gaia Tentacles -->
+		<item id="15126" chance="10" count="1"/> <!-- massive vines -->
+    </loot>
+    <script>
+        <event name="Spawn"/>
+    </script>
+</monster>

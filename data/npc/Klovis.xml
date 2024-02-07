@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Klovis" script="Klovis.lua" walkinterval="350000" floorchange="0" speed="150">
+<health now="100" max="100"/>
+<look type="1695" head="522" body="33" legs="75" feet="30" addons="3"/>
+<parameters>
+<parameter key="message_greet" value="Hello |PLAYERNAME|.I need {help}...you help me?"/> </parameters>
+</npc>

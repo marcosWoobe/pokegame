@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sedento Por Dinheiro" script="default.lua" walkinterval="0" floorchange="0" speed="0">
+<health now="150" max="150"/>
+<look type="2309" head="91" body="114" legs="86" feet="0"/>
+<parameters>
+	<parameter key="message_greet" value="Olá amigo consumidor, eu tenho artigos para lhe ajudar em sua jornada, diga {trade} para ver as ofertas!"/>
+	<parameter key="message_farewell" value="Good bye!"/>
+	<parameter key="message_idletimeout" value="Good bye!"/>
+	<parameter key="message_walkaway" value="Good bye!"/>
+	<parameter key="module_shop" value="1"/>
+	<parameter key="shop_buyable" value= "
+		Vip 5d,25215,300000000;
+		Held T1,23474,50000000;
+		Held T2,23475,80000000;
+		Held T3,23476,130000000;
+		Essence Sh,23418,14000000;
+		Addon box,12339,10000000;
+		Boost Loot 10% 2h,25207,50000000;
+		Boost Exp 10% 1h,23462,50000000;
+		Ticket Invasão Premium,25209,10000000;
+		Rede de Pesca,3075,104000000;
+		Boost Stone,12618,50000000;
+		Shiny Charm,23468,250000000;
+		Diving Mask,17657,75000000;
+		Air Tank,17655,75000000;
+		Fins,17656,75000000
+		"/>
+<!-- 	Outfit Umbreon,2309,400;
+		Outfit Espeon,2310,400;
+		Outfit Flareon,2311,400; -->
+</parameters>
+</npc>

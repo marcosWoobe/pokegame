@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Magmortar" nameDescription="a magmortar" race="fire" experience="1072" speed="217" manacost="0">
+    <health now="160" max="160"/>
+    <look type="1598" head="100" body="300" legs="95" feet="113" corpse="13931"/>
+    <targetchange interval="1000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1000" chance="100" range="1" min="-50" max="-1000"/>
+        <attack name="Scratch" interval="2500" chance="100" range="1"/>
+        <attack name="Fire Punch" interval="3000" chance="100" range="1"/>
+        <attack name="Ember" interval="3500" chance="100" range="3"/>
+        <attack name="Flamethrower" interval="4000" chance="100" range="6"/>
+        <attack name="Fireball" interval="4500" chance="100" range="4"/>
+        <attack name="Fire Blast" interval="5000" chance="100" range="6"/>
+		<attack name="Flame Wheel" interval="5500" chance="100" range="4"/>
+		<attack name="Raging Blast" interval="6000" chance="100" range="6"/>
+        <attack name="Magma Storm" interval="6500" chance="100" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0">
+	</defenses>
+    <voices interval="5000" chance="10">
+        <voice sentence="MAG!"/>
+    </voices>
+    <loot>
+        <item id="15128" chance="10" countmax="1"/>  <!-- blaze topknot -->
+        <item id="15071" chance="2.5" countmax="1"/> <!-- Magmarizer -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

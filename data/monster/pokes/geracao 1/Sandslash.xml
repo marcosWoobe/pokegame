@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sandslash" nameDescription="a sandslash" race="ground" experience="1100" speed="239" manacost="0">
+    <health now="1200" max="1200"/>
+    <look type="636" head="60" body="75" legs="95" feet="113" corpse="11957"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Scratch" interval="2664" chance="30" range="1"/>
+        <attack name="Mud Shot" interval="2899" chance="29" range="3"/>
+        <attack name="Sand Attack" interval="2758" chance="30" range="6"/>
+        <attack name="Rollout" interval="3510" chance="25" range="6"/>
+ <attack name="Bulldoze" interval="3322" chance="26" range="6"/> 
+<attack name="Sand Power" interval="3322" chance="26" range="4"/> 
+		<attack name="Fury Cutter" interval="3322" chance="26" range="5"/>
+		<attack name="Defense Curl" interval="5202" chance="19" range="6"/>
+<attack name="Slash" interval="5202" chance="19" range="6"/> 
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="SANDSLASH!"/>
+    </voices>
+    <loot>
+        <item id="11451" chance="15" count="1" countmax="1"/> <!-- earth stone -->
+        <!-- <item id="19526" chance="35" count="1" countmax="1"/> armadilho claw	 -->
+        <item id="12177" chance="35" count="1" countmax="1"/> <!-- sandbag -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

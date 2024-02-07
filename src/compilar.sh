@@ -1,0 +1,1 @@
+./autogen.sh && ./configure --enable-mysql --enable-server-diag --enable-root-permission && make -j 4

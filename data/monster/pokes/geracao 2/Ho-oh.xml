@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ho-oh" nameDescription="a ho-oh" race="water" experience="10000" speed="227" manacost="0">
+    <health now="170" max="170"/>
+    <look type="955" head="90" body="100" legs="95" feet="113" corpse="3297"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+   
+</flags>
+  <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Whirlwind" interval="2250" chance="25" range="2"/>
+        <attack name="Sunny Day" interval="2500" chance="25" range="4"/>
+        <attack name="Fire Blast" interval="2750" chance="25" range="6"/>
+        <attack name="Sacred Fire" interval="3000" chance="25" range="1"/>
+        <attack name="Ancient Power" interval="3250" chance="25" range="5"/>
+        <attack name="Restore" interval="3500" chance="25" range="4"/>
+        <attack name="Calm Mind" interval="4000" chance="25" range="6"/>
+        <attack name="Lava-Counter" interval="4250" chance="25" range="6"/>
+    </attacks>
+  <defenses armor="0" defense="0">
+  </defenses>
+  <voices interval="5000" chance="10">
+	<voice sentence="HOOOO!"/>
+<voice sentence="OOOOH!"/>
+<voice sentence="HO-OH!"/>
+  </voices>
+    <loot>
+        <item id="12152" chance="50000" countmax="1"/> <!-- pot of lava -->
+        <item id="12338" chance="10" count="1"/> <!-- bag box -->
+        <item id="12157" chance="50000" countmax="1"/> <!-- nail -->
+        <item id="12162" chance="50000" countmax="80"/> <!-- essence of fire -->
+      </loot>
+    <script>
+        <event name="Spawn"/>
+     </script>
+</monster>
+

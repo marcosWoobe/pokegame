@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Salamence" nameDescription="a salamence" race="dragon" experience="1100" speed="217" manacost="0">
+    <health now="1200" max="1200"/>
+    <look type="1742" head="70" body="90" legs="95" feet="113" corpse="14754"/>
+    <targetchange interval="1000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-50" max="-1000"/>
+	        <attack name="Bite" interval="2500" chance="100" range="2"/>
+        <attack name="Crunch" interval="3000" chance="100" range="4"/>
+        <attack name="Dragon Tail" interval="3500" chance="100" range="6"/>
+        <attack name="Dragon Claw" interval="4000" chance="100" range="1"/>
+        <attack name="Dragon Breath" interval="4500" chance="100" range="5"/>
+        <attack name="Dragon Pulse" interval="5000" chance="100" range="4"/>
+        <attack name="Hyper Beam" interval="5500" chance="100" range="6"/>
+        <attack name="Draco Meteor" interval="6000" chance="100" range="6"/>
+		<attack name="Outrage" interval="6500" chance="100" range="6"/>
+		<attack name="Scary Face" interval="7000" chance="100" range="6"/>
+        </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="MENCE!"/>
+    </voices>
+    <loot>  
+		<!-- <item id="15079" chance="2.5" countmax="1"/> blood wings -->
+        <!-- <item id="15115" chance="10" countmax="1"/> mini wings -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

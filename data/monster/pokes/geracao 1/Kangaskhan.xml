@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kangaskhan" nameDescription="a kangaskhan" race="normal" experience="1100" speed="227" manacost="0">
+    <health now="1800" max="1800"/>
+    <look type="549" head="60" body="85" legs="95" feet="113" corpse="11902"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+        
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Bite" interval="2899" chance="29" range="1"/>
+        <attack name="Headbutt" interval="2899" chance="29" range="1"/>
+        <attack name="Dizzy Punch" interval="3275" chance="26" range="1"/>
+        <attack name="Rage" interval="4322" chance="26" range="3"/>
+        <attack name="Epicenter" interval="4450" chance="19" range="6"/>
+		<attack name="Mega Punch" interval="3134" chance="27" range="1"/>
+		<attack name="Sucker Punch" interval="3134" chance="27" range="1"/>
+		<attack name="Crunch" interval="3134" chance="27" range="1"/>
+    </attacks>
+    <defenses armor="0" defense="0">
+    </defenses>
+    <voices interval="5000" chance="10">
+        <voice sentence="KANGASKHAN!"/>
+    </voices>
+    <loot>
+        <item id="13789" chance="35" countmax="1"/> <!-- horn -->
+        <item id="12177" chance="35" countmax="1"/> <!-- sandbag --> 
+        <item id="17352" chance="80" countmax="30"/> <!-- earth ball -->   
+        <item id="11453" chance="15" count="1" countmax="1"/> <!-- heart stone -->
+        <item id="13888" chance="15" count="1" countmax="1"/> <!-- kangskhan ear -->
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

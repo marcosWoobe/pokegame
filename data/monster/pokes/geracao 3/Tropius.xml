@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tropius" nameDescription="a Tropius" race="ghost" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="1642" head="65" body="90" legs="95" feet="113" corpse="14160"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+						<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+	        <attack name="Seed Bomb" interval="2250" chance="25" range="2"/>
+        <attack name="Body Slam" interval="2500" chance="25" range="4"/>
+        <attack name="Razor Leaf" interval="2750" chance="25" range="6"/>
+        <attack name="Magical Leaf" interval="3000" chance="25" range="1"/>
+        <attack name="Air Slash" interval="3250" chance="25" range="5"/>
+        <attack name="Stomp" interval="3500" chance="25" range="4"/>
+        <attack name="Petal Tornado" interval="3750" chance="25" range="6"/>
+        <attack name="Leaf Storm" interval="4000" chance="25" range="6"/>
+		<attack name="Growth" interval="4000" chance="25" range="6"/>
+    </attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Tropius!"/>
+    </voices>
+    <loot> 
+		<item id="12163" chance="80" countmax="50"/> <!-- seed -->
+		<item id="2694" chance="80" countmax="50"/> <!-- straw -->
+        <item id="12172" chance="35" count="1"/>  <!-- bird break -->
+        <item id="15107" chance="35" count="1"/>  <!-- palm leaves -->
+        <item id="12244" chance="12" count="1"/> <!-- ancient stone -->
+        <item id="11441" chance="17" count="1"/> <!-- leaf stone -->
+        <item id="19694" chance="17" count="1"/> <!-- feather stone -->	
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>

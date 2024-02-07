@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gulpin" nameDescription="a gulpin" race="bug" experience="1100" speed="217" manacost="0">
+    <health now="130" max="130"/>
+    <look type="2225" head="65" body="90" legs="95" feet="113" corpse="19319"/>
+    <targetchange interval="2000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+        <flag summonable="1"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="1"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="97"/>
+        <flag runonhealth="0"/>
+       
+    </flags>
+    <attacks>
+		<attack name="melee" interval="1500" chance="100" range="1" min="-100" max="-250"/>
+        <attack name="Pound" interval="2250" chance="25" range="2"/>
+        <attack name="Acid" interval="2500" chance="25" range="4"/>
+        <attack name="Sludge" interval="2750" chance="25" range="6"/>
+        <attack name="Poison Gas" interval="3000" chance="25" range="1"/>
+        <attack name="Gastro Acid" interval="3250" chance="25" range="5"/>
+	</attacks>
+    <defenses armor="0" defense="0"/>
+    <voices interval="5000" chance="10">
+        <voice sentence="Gulpin!"/>
+    </voices>
+    <loot>
+    </loot>
+    <script>
+          <event name="Spawn"/> 
+    </script>
+</monster>
