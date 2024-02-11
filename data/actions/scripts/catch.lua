@@ -556,12 +556,12 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             end
         else
 
-           -- local SERVERCATCHRATE = 2
-            --local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+            local SERVERCATCHRATE = 2
+            local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
 
             -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
             -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
-            if playerPoints > finalRand then
+            if math.random() <= pokeChance then
                 doSendMagicEffect(topos, catch)
                 addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
 
