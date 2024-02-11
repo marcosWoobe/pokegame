@@ -556,7 +556,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             end
         else
 
-           -- local SERVERCATCHRATE = 2
+            local SERVERCATCHRATE = 2
             local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
 
             -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
