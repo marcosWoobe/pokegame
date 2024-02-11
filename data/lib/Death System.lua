@@ -49,46 +49,46 @@ local function playerAddExp(cid, exp)
         local Tier = getItemAttribute(ball.uid, "heldx")
         if Tier and Tier > 70 and Tier < 78 then
         	-- print(Tiers[Tier].bonus)
-            doPlayerAddExp(cid, math.floor((((exp * Tiers[Tier].bonus) * vipexp)) * doublexp)/4)
-	        doSendAnimatedText(getThingPos(cid), math.floor((((exp * Tiers[Tier].bonus) * vipexp) * doublexp)/4), 215)
-            sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor((((exp * Tiers[Tier].bonus) * vipexp) * doublexp)/4).." Pontos de Experi�ncia.")
+            doPlayerAddExp(cid, math.floor((((exp * Tiers[Tier].bonus) * vipexp)) * doublexp))
+	        doSendAnimatedText(getThingPos(cid), math.floor((((exp * Tiers[Tier].bonus) * vipexp) * doublexp)), 215)
+            sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor((((exp * Tiers[Tier].bonus) * vipexp) * doublexp)).." Pontos de Experi�ncia.")
 		else
-            doPlayerAddExp(cid, math.floor(((exp * vipexp)) * doublexp)/4)
+            doPlayerAddExp(cid, math.floor(((exp * vipexp)) * doublexp))
             --print(math.floor((exp * vipexp)) * doublexp)
-	        doSendAnimatedText(getThingPos(cid), math.floor(((exp * vipexp) * doublexp)/4), 215)
-			sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * vipexp) * doublexp)/4).." Pontos de Experi�ncia.")
+	        doSendAnimatedText(getThingPos(cid), math.floor(((exp * vipexp) * doublexp)), 215)
+			sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * vipexp) * doublexp)).." Pontos de Experi�ncia.")
         end
 	else
-	    doPlayerAddExp(cid, math.floor(((exp * vipexp)) * doublexp)/4)
-	    doSendAnimatedText(getThingPos(cid), math.floor(((exp * vipexp) * doublexp)/4), 215)
-		sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * vipexp) * doublexp)/4).." Pontos de Experi�ncia.")
+	    doPlayerAddExp(cid, math.floor(((exp * vipexp)) * doublexp))
+	    doSendAnimatedText(getThingPos(cid), math.floor(((exp * vipexp) * doublexp)), 215)
+		sendMsgToPlayer(cid, MESSAGE_EVENT_DEFAULT, "Voc� ganhou "..math.floor(((exp * vipexp) * doublexp)).." Pontos de Experi�ncia.")
 	end
 end
 
 local Exps = {
-	{minL = 1, maxL = 15, multipler = 75},
-	{minL = 16, maxL = 20, multipler = 70},
-	{minL = 21, maxL = 25, multipler = 65},
-	{minL = 26, maxL = 30, multipler = 55},
-	{minL = 31, maxL = 35, multipler = 48},
-	{minL = 36, maxL = 40, multipler = 45},
-	{minL = 41, maxL = 45, multipler = 42},
-	{minL = 46, maxL = 50, multipler = 39},
-	{minL = 51, maxL = 55, multipler = 36},
-	{minL = 56, maxL = 60, multipler = 33},
-	{minL = 61, maxL = 75, multipler = 30},
-	{minL = 76, maxL = 90, multipler = 25},
-	{minL = 91, maxL = 105, multipler = 20},
-	{minL = 106, maxL = 120, multipler = 15},
-	{minL = 121, maxL = 135, multipler = 10},
-	{minL = 136, maxL = 150, multipler = 9},
-	{minL = 151, maxL = 165, multipler = 8},
-	{minL = 166, maxL = 180, multipler = 7},
-	{minL = 181, maxL = 195, multipler = 6},
-	{minL = 196, maxL = 210, multipler = 5},
-	{minL = 211, maxL = 225, multipler = 4},
-	{minL = 226, maxL = 250, multipler = 3},
-	{minL = 251, maxL = 300, multipler = 2},
+	{minL = 1, maxL = 15, multipler = 1},
+	{minL = 16, maxL = 20, multipler = 1},
+	{minL = 21, maxL = 25, multipler = 1},
+	{minL = 26, maxL = 30, multipler = 1},
+	{minL = 31, maxL = 35, multipler = 1},
+	{minL = 36, maxL = 40, multipler = 1},
+	{minL = 41, maxL = 45, multipler = 1},
+	{minL = 46, maxL = 50, multipler = 1},
+	{minL = 51, maxL = 55, multipler = 1},
+	{minL = 56, maxL = 60, multipler = 1},
+	{minL = 61, maxL = 75, multipler = 1},
+	{minL = 76, maxL = 90, multipler = 1},
+	{minL = 91, maxL = 105, multipler = 1},
+	{minL = 106, maxL = 120, multipler = 1},
+	{minL = 121, maxL = 135, multipler = 1},
+	{minL = 136, maxL = 150, multipler = 1},
+	{minL = 151, maxL = 165, multipler = 1},
+	{minL = 166, maxL = 180, multipler = 1},
+	{minL = 181, maxL = 195, multipler = 1},
+	{minL = 196, maxL = 210, multipler = 1},
+	{minL = 211, maxL = 225, multipler = 1},
+	{minL = 226, maxL = 250, multipler = 1},
+	{minL = 251, maxL = 300, multipler = 1},
 	{minL = 301, maxL = 350, multipler = 1},
 }
 
