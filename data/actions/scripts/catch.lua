@@ -54,7 +54,7 @@ function sendBrokesMsg(cid, str, ball, poke, catched)
     local msg = {}
     local countN, countG, countS, countU, countV, countS2 = 0, 0, 0, 0, 0, 0
     local maguCount, soraCount, yumeCount, duskCount, taleCount, moonCount, netCount, premierCount, tinkerCount, fastCount, heavyCount = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-    table.insert(msg, "Você"..(catched == false and " já" or "").." gastou: ")
+    table.insert(msg, "Vocï¿½"..(catched == false and " jï¿½" or "").." gastou: ")
     
     for n, g, s, u, v, s2, d, magu, sora, yume, dusk, tale, moon, net, premier, tinker, fast, heavy in strings:gmatch(t) do
         if tonumber(n) and tonumber(n) > 0 then 
@@ -365,15 +365,14 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             pokeTabMedia = pokeTab.media * 3
         end
 
-        local pokeChance = pokeTabMedia * ballsTypesCatch[pokeTab.balltype]
-        
+
         local tableMinBall = { --
-            ["pokeball"] = "Poke Ball", -- Se eu joguei pokeball, ganhará 1 point por cada
-            ["greatball"] = "Great Ball", -- Se eu joguei great ball, ganhará 2 points por cada
-            ["superball"] = "Super Ball", -- Se eu joguei superball, ganhará 3 points por cada
-            ["ultraball"] = "Ultra Ball", -- Se eu joguei ultraball, ganhará 4 points por cada          
-            ["vball"] = "V Ball", -- Se eu joguei ultraball, ganhará 4 points por cada          
-            ["saffariball"] = "Saffari Ball", -- Se eu joguei ultraball, ganhará 4 points por cada          
+            ["pokeball"] = "Poke Ball", -- Se eu joguei pokeball, ganharï¿½ 1 point por cada
+            ["greatball"] = "Great Ball", -- Se eu joguei great ball, ganharï¿½ 2 points por cada
+            ["superball"] = "Super Ball", -- Se eu joguei superball, ganharï¿½ 3 points por cada
+            ["ultraball"] = "Ultra Ball", -- Se eu joguei ultraball, ganharï¿½ 4 points por cada          
+            ["vball"] = "V Ball", -- Se eu joguei ultraball, ganharï¿½ 4 points por cada          
+            ["saffariball"] = "Saffari Ball", -- Se eu joguei ultraball, ganharï¿½ 4 points por cada          
         }
         
         local tablert = { -- typeee para type normal
@@ -395,9 +394,14 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             ["heavy"] = 6,
             ["saffari"] = 6,
         }
+
+        local SERVERCATCHRATE = 2
+        local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+        
+        
         
         if tablert[typeee] < ballsTypesCatch[pokeTab.minBallType] then
-            doPlayerSendTextMessage(cid, 20, "Você só pode capturar ".. name .." com ".. tableMinBall[pokeTab.minBallType] .." ou superior.")
+            doPlayerSendTextMessage(cid, 20, "Vocï¿½ sï¿½ pode capturar ".. name .." com ".. tableMinBall[pokeTab.minBallType] .." ou superior.")
             addEvent(doNotCapturePokemon, 3000, cid, name, typeee) 
             doSendMagicEffect(topos, fail)
             doRemoveItem(corpse, 1)
@@ -409,7 +413,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             local extraChance = (pokeChance - playerPoints) * -1
             
             if extraChance < 10 and pokeChance > 160 then
-                --doPlayerSendTextMessage(cid, 20, "Sistema de persistência no catch ativado! Para mais informações, diga !persistencia")
+                --doPlayerSendTextMessage(cid, 20, "Sistema de persistï¿½ncia no catch ativado! Para mais informaï¿½ï¿½es, diga !persistencia")
             end
             
             local Eachpercent = math.ceil(extraChance * 0.6) -- 0.7 velocidade em q aumenta rate por ball
@@ -523,7 +527,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 
             doRemoveItem(corpse, 1)         
             return true     
-        elseif typeee == "premier" then  -- premier ball
+        elseif typeee == "premieresas" then  -- premier ball
             local premierMedia = pokeTabMedia  
             local premierBase = 2        
             
@@ -557,7 +561,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
         else
             -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
             -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
-            if playerPoints > finalRand then
+            if math.random() <= pokeChance then
                 doSendMagicEffect(topos, catch)
                 addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
 
@@ -636,7 +640,7 @@ function doCapturePokemon(cid, poke, ballid, status, typeee, clevel)
         doTransformItem(item, pokeballs[poke:lower()].on)   
     end 
     
-    doPlayerSendTextMessage(cid, 27, "Parabéns, você pegou um ("..poke..")!")
+    doPlayerSendTextMessage(cid, 27, "Parabï¿½ns, vocï¿½ pegou um ("..poke..")!")
     
     if #getCreatureSummons(cid) >= 1 then
         doSendMagicEffect(getThingPos(getCreatureSummons(cid)[1]), 173) 
@@ -654,7 +658,7 @@ function doCapturePokemon(cid, poke, ballid, status, typeee, clevel)
     if depot then 
         local cidade = 1
         doPlayerSendPokeCPName(getCreatureName(cid), item, 1)
-        doPlayerSendTextMessage(cid, 27, "Você já está segurando 6 pokemons ou não tem espaço na bag, por isso, esta pokebola foi enviada para o seu depósito.")
+        doPlayerSendTextMessage(cid, 27, "Vocï¿½ jï¿½ estï¿½ segurando 6 pokemons ou nï¿½o tem espaï¿½o na bag, por isso, esta pokebola foi enviada para o seu depï¿½sito.")
         if string.find(poke, "Shiny") then 
             db.executeQuery("UPDATE player_catchs SET pokemon_id = '".. poke .."', player_name = '".. getCreatureName(cid) .."' WHERE id = '1';")
         end
@@ -668,7 +672,7 @@ function doCapturePokemon(cid, poke, ballid, status, typeee, clevel)
     
     if poke == tostring(getPlayerStorageValue(cid, catchModes.storage2)) and not hasCatched(cid) then
         setDailyCatched(cid, true)
-        doPlayerSendTextMessage(cid, 27, "Daily Catch: Você terminou a missão! Volte para pegar sua recompensa!")
+        doPlayerSendTextMessage(cid, 27, "Daily Catch: Vocï¿½ terminou a missï¿½o! Volte para pegar sua recompensa!")
     end
     
 --    local storage = newpokedex[poke].stoCatch 
@@ -953,7 +957,7 @@ function onUse(cid, item, frompos, item3, topos)
     end 
     
     -- if isInDuel(cid) then
-    --     doPlayerSendCancel(cid, "Você não pode capturar nenhum pokémon enquanto está em duel.")
+    --     doPlayerSendCancel(cid, "Vocï¿½ nï¿½o pode capturar nenhum pokï¿½mon enquanto estï¿½ em duel.")
     --     return true
     -- end
     
@@ -987,7 +991,7 @@ function onUse(cid, item, frompos, item3, topos)
     -- doSendMsg(cid, owner)
 
     if owner and isCreature(pOwner) and isPlayer(pOwner) and cid ~= pOwner and not isInParyWithPlayer then 
-        doPlayerSendCancel(cid, "Desculpa. Isso não é possivel.")
+        doPlayerSendCancel(cid, "Desculpa. Isso nï¿½o ï¿½ possivel.")
         return true
     end
     
@@ -997,12 +1001,12 @@ function onUse(cid, item, frompos, item3, topos)
     
     local catchBlocks = {"Moltres", "Articuno", "Zapdos", "Aerodactyl", "Kabutops", "Kabuto", "Hitmonlee", "Hitmonchan", "Hitmontop", "Omastar", "Omanyte"}
     if isInArray(catchBlocks, name) then
-        doSendMsg(cid, "Você não pode capturar este pokemon.")
+        doSendMsg(cid, "Vocï¿½ nï¿½o pode capturar este pokemon.")
         return true
     end
     
     if typeee == "master" and isShinyName(name) then
-        doSendMsg(cid, "Você não pode capturar pokemon shiny com a master ball.")
+        doSendMsg(cid, "Vocï¿½ nï¿½o pode capturar pokemon shiny com a master ball.")
         return true
     end
     
