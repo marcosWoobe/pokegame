@@ -358,7 +358,54 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
     
     pokeTab = pokeChance[name]
 
-    if pokeTab then
+    local tablert = { -- typeee para type normal
+            ["poke"] = 1,
+            ["great"] = 2,
+            ["super"] = 3,
+            ["ultra"] = 5,
+            ["vball"] = 3,
+            ["premier"] = 6,
+            ["magu"] = 6,
+            ["sora"] = 6,
+            ["yume"] = 6,
+            ["dust"] = 6,
+            ["tale"] = 6,
+            ["moon"] = 6,
+            ["net"] = 6,
+            ["tinker"] = 6,
+            ["fast"] = 6,
+            ["heavy"] = 6,
+            ["saffari"] = 6,
+        }
+
+    local SERVERCATCHRATE = 1
+    
+    pokeTabMedia = pokeTab.media
+    if string.find(name, "Shiny") then
+        pokeTabMedia = pokeTab.media * 3
+    end
+
+    local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+
+    if math.random() <= pokeChance then
+        doSendMagicEffect(topos, catch)
+        addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
+
+        sendBrokesMsg(cid, newpokedexCatchXpMasterx[name].stoCatch , typeee, name, true) 
+        setPlayerStorageValue(cid, newpokedexCatchXpMasterx[name].stoCatch, "normal = 0, great = 0, super = 0, ultra = 0, vball = 0, saffari = 0, dark = 0, magu = 0, sora = 0, yume = 0, dusk = 0, tale = 0, moon = 0, net = 0, premier = 0, tinker = 0, fast = 0, heavy = 0;")
+        doIncreaseStatistics(name, true, true)
+
+        doRemoveItem(corpse, 1)
+        return true     
+    
+    else
+        doRemoveItem(corpse, 1)
+        addEvent(doNotCapturePokemon, 3000, cid, name, typeee) 
+        doSendMagicEffect(topos, fail)
+    end
+
+
+    /*if pokeTab then
 
         pokeTabMedia = pokeTab.media
         if string.find(name, "Shiny") then
@@ -556,8 +603,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             end
         else
 
-            local SERVERCATCHRATE = 1
-            local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+            
 
             -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
             -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
@@ -573,11 +619,8 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
                 return true     
             end
         end     
-    end
-    doRemoveItem(corpse, 1)
-    addEvent(doNotCapturePokemon, 3000, cid, name, typeee) 
-    doSendMagicEffect(topos, fail)
-end
+    */
+
 
 function doCapturePokemon(cid, poke, ballid, status, typeee, clevel) 
     
