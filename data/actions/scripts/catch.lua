@@ -365,7 +365,8 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             pokeTabMedia = pokeTab.media * 3
         end
 
-
+        local pokeChance = pokeTabMedia * ballsTypesCatch[pokeTab.balltype]
+        
         local tableMinBall = { --
             ["pokeball"] = "Poke Ball", -- Se eu joguei pokeball, ganhar� 1 point por cada
             ["greatball"] = "Great Ball", -- Se eu joguei great ball, ganhar� 2 points por cada
@@ -394,11 +395,6 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             ["heavy"] = 6,
             ["saffari"] = 6,
         }
-
-        local SERVERCATCHRATE = 2
-        local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
-        
-        
         
         if tablert[typeee] < ballsTypesCatch[pokeTab.minBallType] then
             doPlayerSendTextMessage(cid, 20, "Voc� s� pode capturar ".. name .." com ".. tableMinBall[pokeTab.minBallType] .." ou superior.")
@@ -527,7 +523,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 
             doRemoveItem(corpse, 1)         
             return true     
-        elseif typeee == "premieresas" then  -- premier ball
+        elseif typeee == "premier" then  -- premier ball
             local premierMedia = pokeTabMedia  
             local premierBase = 2        
             
@@ -559,9 +555,13 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
                 return true     
             end
         else
+
+           -- local SERVERCATCHRATE = 2
+            --local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+
             -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
             -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
-            if math.random() <= pokeChance then
+            if playerPoints > finalRand then
                 doSendMagicEffect(topos, catch)
                 addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
 
