@@ -280,82 +280,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
     
     local str = newpokedexCatchXpMasterx[name].stoCatch
     local Wast = getWastedBall(cid, str)
-    local doCatch = false
-    
-    local playerPoints = 0
-    
-    if Wast.normal > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["pokeball"] * Wast.normal)
-    end
-    
-    if Wast.great > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["greatball"] * Wast.great)
-    end
-    
-    if Wast.super > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["superball"] * Wast.super)
-    end
-    
-    if Wast.ultra > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["ultraball"] * Wast.ultra)
-    end
 
-    if Wast.vball > 0 then
-        if string.find(name, "Shiny") then 
-            playerPoints = playerPoints + ((ballsTypesCatch["vballShiny"]) * Wast.vball)
-        else
-            playerPoints = playerPoints + (ballsTypesCatch["vball"] * Wast.vball)
-        end
-    end
-    
-    if Wast.saffari > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["saffariball"] * Wast.saffari)
-    end
-    
-    if Wast.premier > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["premierball"] * Wast.premier)
-    end
-    
-    if Wast.magu > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["maguball"] * Wast.magu)
-    end
-    
-    if Wast.sora > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["soraball"] * Wast.sora)
-    end
-    
-    if Wast.yume > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["yumeball"] * Wast.yume)
-    end
-    
-    if Wast.dusk > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["duskball"] * Wast.dusk)
-    end
-    
-    if Wast.tale > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["taleball"] * Wast.tale)
-    end
-    
-    if Wast.moon > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["moonball"] * Wast.moon)
-    end
-    
-    if Wast.net > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["netball"] * Wast.net)
-    end
-    
-    if Wast.tinker > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["tinkerball"] * Wast.tinker)
-    end
-    
-    if Wast.fast > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["fastball"] * Wast.fast)
-    end
-    
-    if Wast.heavy > 0 then
-        playerPoints = playerPoints + (ballsTypesCatch["heavyball"] * Wast.heavy)
-    end
-    
     pokeTab = pokeChance[name]
 
     if pokeTab then
@@ -364,17 +289,6 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
         if string.find(name, "Shiny") then
             pokeTabMedia = pokeTab.media * 3
         end
-
-        local pokeChance = pokeTabMedia * ballsTypesCatch[pokeTab.balltype]
-        
-        local tableMinBall = { --
-            ["pokeball"] = "Poke Ball", -- Se eu joguei pokeball, ganhar� 1 point por cada
-            ["greatball"] = "Great Ball", -- Se eu joguei great ball, ganhar� 2 points por cada
-            ["superball"] = "Super Ball", -- Se eu joguei superball, ganhar� 3 points por cada
-            ["ultraball"] = "Ultra Ball", -- Se eu joguei ultraball, ganhar� 4 points por cada          
-            ["vball"] = "V Ball", -- Se eu joguei ultraball, ganhar� 4 points por cada          
-            ["saffariball"] = "Saffari Ball", -- Se eu joguei ultraball, ganhar� 4 points por cada          
-        }
         
         local tablert = { -- typeee para type normal
             ["poke"] = 1,
@@ -396,183 +310,23 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
             ["saffari"] = 6,
         }
         
-        if tablert[typeee] < ballsTypesCatch[pokeTab.minBallType] then
-            doPlayerSendTextMessage(cid, 20, "Voc� s� pode capturar ".. name .." com ".. tableMinBall[pokeTab.minBallType] .." ou superior.")
-            addEvent(doNotCapturePokemon, 3000, cid, name, typeee) 
-            doSendMagicEffect(topos, fail)
-            doRemoveItem(corpse, 1)
-            return true
-        end
-        
-        if playerPoints > pokeChance and not isShinyName(name) then
-            
-            local extraChance = (pokeChance - playerPoints) * -1
-            
-            if extraChance < 10 and pokeChance > 160 then
-                --doPlayerSendTextMessage(cid, 20, "Sistema de persist�ncia no catch ativado! Para mais informa��es, diga !persistencia")
-            end
-            
-            local Eachpercent = math.ceil(extraChance * 0.6) -- 0.7 velocidade em q aumenta rate por ball
-            
-            playerPoints = playerPoints + (Eachpercent)     
-            
-        end
-        
-        local media = pokeTabMedia
-        local finalRand = 0
-        
-        if media < 26 then
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3)* 1.1)
-            
-        elseif media >= 26 and media < 60 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            finalRand = math.ceil((rand1 + rand2 + rand3)* 1.2)
-            
-        elseif media >= 60 and media <= 100 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4)/1.35)
-            
-        elseif media > 100 and media <= 180 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5)/1.55)    
-            
-        elseif media > 180 and media <= 250 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            local rand6 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5 + rand6)/1.65)
-            
-        elseif media > 250 and media <= 300 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            local rand6 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5 + rand6)/1.70)
-            
-        elseif media > 300 and media <= 350 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            local rand6 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5 + rand6)/1.75)
-            
-        elseif media > 350 and media <= 400 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            local rand6 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5 + rand6)/1.78) -- 1.80
-            
-        elseif media > 400 and media <= 450 then
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            local rand6 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5 + rand6)/1.82) -- 1.85
-            
-        else
-            
-            local rand1 = math.random(1, pokeChance)
-            local rand2 = math.random(1, pokeChance)
-            local rand3 = math.random(1, pokeChance)
-            local rand4 = math.random(1, pokeChance)
-            local rand5 = math.random(1, pokeChance)
-            local rand6 = math.random(1, pokeChance)
-            finalRand = math.floor((rand1 + rand2 + rand3 + rand4 + rand5 + rand6)/1.84) -- 1.9     
-            
-        end
-        
-        if getPlayerStorageValue(cid, 394672) >= 1 and 1 == 0 then
+
+        local SERVERCATCHRATE = 1
+        local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+
+        -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
+        -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
+        if math.random() >= pokeChance then
             doSendMagicEffect(topos, catch)
-            addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel)
+            addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
 
             sendBrokesMsg(cid, newpokedexCatchXpMasterx[name].stoCatch , typeee, name, true) 
             setPlayerStorageValue(cid, newpokedexCatchXpMasterx[name].stoCatch, "normal = 0, great = 0, super = 0, ultra = 0, vball = 0, saffari = 0, dark = 0, magu = 0, sora = 0, yume = 0, dusk = 0, tale = 0, moon = 0, net = 0, premier = 0, tinker = 0, fast = 0, heavy = 0;")
             doIncreaseStatistics(name, true, true)
 
-            doRemoveItem(corpse, 1)         
+            doRemoveItem(corpse, 1)
             return true     
-        elseif typeee == "premier"  and 1 == 0 then  -- premier ball
-            local premierMedia = pokeTabMedia  
-            local premierBase = 2        
-            
-            if name == "Magikarp" then
-                premierMedia = 2
-                premierBase = 1      
-            elseif premierMedia <= 3 or isInArray({"Rattata", "Caterpie", "Weedle", "Pidgey", "Oddish", "Bellsprout"}, name) then
-                premierMedia = 5 -- 2/5 de chance, melhor que 1/3 e menor que 1/2
-                premierBase = 2
-            elseif premierMedia >= 4 and premierMedia <= 6 then
-                premierMedia = 6
-                premierBase = 1
-            elseif premierMedia >= 7 and premierMedia <= 10 then
-                premierMedia = 10
-                premierBase = 1
-            end      
-            
-            local premierChance = math.random(1, premierMedia) 
-            
-            if premierChance <= premierBase then        
-                doSendMagicEffect(topos, catch)
-                addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel)
-
-                sendBrokesMsg(cid, newpokedexCatchXpMasterx[name].stoCatch , typeee, name, true) 
-                setPlayerStorageValue(cid, newpokedexCatchXpMasterx[name].stoCatch, "normal = 0, great = 0, super = 0, ultra = 0, vball = 0, saffari = 0, dark = 0, magu = 0, sora = 0, yume = 0, dusk = 0, tale = 0, moon = 0, net = 0, premier = 0, tinker = 0, fast = 0, heavy = 0;")
-                doIncreaseStatistics(name, true, true)
-
-                doRemoveItem(corpse, 1)
-                return true     
-            end
-        else
-
-            local SERVERCATCHRATE = 1
-            local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
-
-            -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
-            -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
-            if math.random() <= pokeChance then
-                doSendMagicEffect(topos, catch)
-                addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
-
-                sendBrokesMsg(cid, newpokedexCatchXpMasterx[name].stoCatch , typeee, name, true) 
-                setPlayerStorageValue(cid, newpokedexCatchXpMasterx[name].stoCatch, "normal = 0, great = 0, super = 0, ultra = 0, vball = 0, saffari = 0, dark = 0, magu = 0, sora = 0, yume = 0, dusk = 0, tale = 0, moon = 0, net = 0, premier = 0, tinker = 0, fast = 0, heavy = 0;")
-                doIncreaseStatistics(name, true, true)
-
-                doRemoveItem(corpse, 1)
-                return true     
-            end
-        end     
+        end 
     end
     doRemoveItem(corpse, 1)
     addEvent(doNotCapturePokemon, 3000, cid, name, typeee) 

@@ -49,7 +49,7 @@ if not isCreature(cid) then return false end
 local storage = getPlayerStorageValue(cid, str)
 
 if storage == -1 then
-   return sendMsgToPlayer(cid, 27, "Você ainda não gastou nenhuma ball para capturar esse pokemon!")
+   return sendMsgToPlayer(cid, 27, "Vocï¿½ ainda nï¿½o gastou nenhuma ball para capturar esse pokemon!")
 end
 
 local t = "normal = (.-), great = (.-), super = (.-), ultra = (.-), vball = (.-), saffari = (.-), dark = (.-), magu = (.-), sora = (.-), yume = (.-), dusk = (.-), tale = (.-), moon = (.-), net = (.-), premier = (.-), tinker = (.-), fast = (.-), heavy = (.-);"
@@ -57,7 +57,7 @@ local msg = {}
 local countN, countG, countS, countU, countV, countS2 = 0, 0, 0, 0, 0, 0
 local maguCount, soraCount, yumeCount, duskCount, taleCount, moonCount, netCount, premierCount, tinkerCount, fastCount, heavyCount = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
-table.insert(msg, "Você ja gastou: ")
+table.insert(msg, "Vocï¿½ ja gastou: ")
 
 for n, g, s, u, v, s2, d, magu, sora, yume, dusk, tale, moon, net, premier, tinker, fast, heavy in storage:gmatch(t) do
     if tonumber(n) and tonumber(n) > 0 then 
@@ -142,7 +142,7 @@ for n, g, s, u, v, s2, d, magu, sora, yume, dusk, tale, moon, net, premier, tink
 end
 
 	if #msg == 1 then
-		return doPlayerSendTextMessage(cid, 27, "Você ainda não gastou nenhuma ball para catar um "..name..".")
+		return doPlayerSendTextMessage(cid, 27, "Vocï¿½ ainda nï¿½o gastou nenhuma ball para catar um "..name..".")
 	end
 
 	if string.sub(msg[#msg], 1, 1) == "," then
@@ -164,7 +164,7 @@ function sendBrokesMsg(cid, str, ball, poke, catched)
 	local msg = {}
 	local countN, countG, countS, countU, countS2 = 0, 0, 0, 0, 0
 	local maguCount, soraCount, yumeCount, duskCount, taleCount, moonCount, netCount, premierCount, tinkerCount, fastCount, heavyCount = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-	table.insert(msg, "Você"..(catched == false and " já" or "").." gastou: ")
+	table.insert(msg, "Vocï¿½"..(catched == false and " jï¿½" or "").." gastou: ")
 	
 	for n, g, s, u, s2, d, magu, sora, yume, dusk, tale, moon, net, premier, tinker, fast, heavy in strings:gmatch(t) do
 		if tonumber(n) and tonumber(n) > 0 then 
@@ -365,128 +365,39 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 	local str = newpokedexCatchXpMasterx[name].stoCatch
 	local Wast = getWastedBall(cid, str)
 	
-	local playerPoints = 0
-	
-	--print("Valor da Sorte "..sorte)
-	
-	if Wast.normal > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["pokeball"] * Wast.normal)
-	end
-	
-	if Wast.great > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["greatball"] * Wast.great)
-	end
-	
-	if Wast.super > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["superball"] * Wast.super) 
-	end
-	
-	if Wast.ultra > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["ultraball"] * Wast.ultra) 
-	end
-	
-	if Wast.saffari > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["saffariball"] * Wast.saffari) 
-	end
-	
-	if Wast.premier > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["premierball"] * Wast.premier) 
-	end
-	
-    if Wast.magu > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["maguball"] * Wast.magu) 
-	end
-	
-	if Wast.sora > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["soraball"] * Wast.sora) 
-	end
-	
-	if Wast.yume > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["yumeball"] * Wast.yume) 
-	end
-	
-	if Wast.dusk > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["duskball"] * Wast.dusk) 
-	end
-	
-	if Wast.tale > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["taleball"] * Wast.tale) 
-	end
-	
-	if Wast.moon > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["moonball"] * Wast.moon) 
-	end
-	
-	if Wast.net > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["netball"] * Wast.net) 
-	end
-	
-	if Wast.tinker > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["tinkerball"] * Wast.tinker) 
-	end
-	
-	if Wast.fast > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["fastball"] * Wast.fast) 
-	end
-	
-	if Wast.heavy > 0 then
-		playerPoints = playerPoints + (ballsTypesCatch["heavyball"] * Wast.heavy)
-	end
-	
-	playerPoints = playerPoints + sorte	
-	--print("Meu playerPoints é :"..playerPoints)
-		
-	local doCatch = false
-	
 	local pokeTab = pokeChance[name]
 	
 	if pokeTab then
-		local pokeChance = pokeTab.media * ballsTypesCatch[pokeTab.balltype]
 
-		local tableMinBall = { --
-			["pokeball"] = "Poke Ball", -- Se eu joguei pokeball, ganhará 1 point por cada
-			["greatball"] = "Great Ball", -- Se eu joguei great ball, ganhará 2 points por cada
-			["superball"] = "Super Ball", -- Se eu joguei superball, ganhará 3 points por cada
-			["ultraball"] = "Ultra Ball", -- Se eu joguei ultraball, ganhará 4 points por cada			
-			["saffariball"] = "Saffari Ball", -- Se eu joguei ultraball, ganhará 4 points por cada			
-		}
 		
 		local tablert = { -- typeee para type normal
 			["poke"] = 1,
 			["great"] = 2,
 			["super"] = 3,
 			["ultra"] = 5,
-			["premier"] = 2,
-			["magu"] = 8,
-			["sora"] = 8,
-			["yume"] = 8,
-			["dust"] = 8,
-			["tale"] = 8,
-			["moon"] = 8,
-			["net"] = 8,
-			["tinker"] = 8,
-			["fast"] = 8,
-			["heavy"] = 8,
-			["saffari"] = 8,
+			["vball"] = 3,
+			["premier"] = 6,
+			["magu"] = 6,
+			["sora"] = 6,
+			["yume"] = 6,
+			["dust"] = 6,
+			["tale"] = 6,
+			["moon"] = 6,
+			["net"] = 6,
+			["tinker"] = 6,
+			["fast"] = 6,
+			["heavy"] = 6,
+			["saffari"] = 6,
 		}
+	
 
-		if tablert[typeee] < ballsTypesCatch[pokeTab.minBallType] then --pokeTab.minBallType
-			doPlayerSendTextMessage(cid, 20, "Você só pode capturar ".. name .." com ".. tableMinBall[pokeTab.minBallType] .." ou superior.")
-			addEvent(doNotCapturePokemon, 3000, cid, name, typeee) 
-			doSendMagicEffect(topos, fail)
-			return true
-		end
+		local SERVERCATCHRATE = 1
+		local pokeChance = (tablert[typeee]/(pokeTabMedia * ballsTypesCatch[pokeTab.balltype]))*SERVERCATCHRATE
+
 		
-		local pokeChance = pokeTab.media * ballsTypesCatch[pokeTab.balltype]	
-		--print("Meu pokeChance é :"..pokeChance)		
 		
-		if isGod(cid) and getPlayerStorageValue(cid, 394672) >= 1 then
-			doSendMagicEffect(topos, catch)
-			addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee) 
-			return true		
-		end
-		
-		if playerPoints > pokeChance and name ~= "Vaporeon" then
+		if math.random() >= pokeChance then
+
 			local storage = newpokedexCatchXpMasterx[name].stoCatch 	
 			local XPCATCH = newpokedexCatchXpMasterx[name].expCatch
 			local Wast = getWastedBall(cid, storage)
@@ -525,7 +436,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 			
 			if name == tostring(getPlayerStorageValue(cid, catchModes.storage2)) and not hasCatched(cid) then
 				setDailyCatched(cid, true)
-				addEvent(doPlayerSendTextMessage, 3050, cid, 27, "Daily Catch: Você terminou a missão! Volte para pegar sua recompensa!")
+				addEvent(doPlayerSendTextMessage, 3050, cid, 27, "Daily Catch: Vocï¿½ terminou a missï¿½o! Volte para pegar sua recompensa!")
 			end
 			
 			addEvent(setPlayerStorageValue, 3100, cid, 141417, -1)		

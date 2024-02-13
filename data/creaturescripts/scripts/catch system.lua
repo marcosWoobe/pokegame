@@ -394,7 +394,7 @@ function sendBrokesMsg2(cid, name)                       --alterado v1.9 \/ TUDO
     if not isCreature(cid) then return false end
 
     local msg = {}
-    table.insert(msg, "Você já gastou: ")
+    table.insert(msg, "Vocï¿½ jï¿½ gastou: ")
 
     local pokeballs =
     {
@@ -432,7 +432,7 @@ end
 function sendBrokesMsg(cid, poke)
     if not isCreature(cid) then return false end
     local msg = {}
-    table.insert(msg, "Você gastou: ")
+    table.insert(msg, "Vocï¿½ gastou: ")
     local pokeballs =
     {
         {"Poke ball"},
@@ -458,7 +458,7 @@ function sendBrokesMsg(cid, poke)
     if string.sub(msg[#msg], 1, 1) == "," then
         msg[#msg] = " e".. string.sub(msg[#msg], 2, #msg[#msg])
     end
-    table.insert(msg, " tentando pegá-lo.")
+    table.insert(msg, " tentando pegï¿½-lo.")
     sendMsgToPlayer(cid, 27, table.concat(msg))
 end                                                               --viktor /\
 --------------------------------------------------------------------------------
@@ -640,7 +640,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee, typeBall) --Ed
 
 	local _baseRandom = math.random(0, 5000)
 
-	if _baseRandom <= _basechance then  
+	if _baseRandom <= _basechance and 1 == 0 then  
 	    local status = {}
 		status.gender = ""
 		status.clevel = tonumber(getItemAttribute(corpse, "level"))
@@ -800,14 +800,14 @@ function doCapturePokemon(cid, poke, ballid, status, typeee, typeBall)
 	    -- local cidade = getPlayerTown(cid)
 	    local cidade = 1
         doPlayerSendPokeCPName(getCreatureName(cid), item, cidade)	
-		addEvent(doPlayerSendTextMessage, 3000, cid, 27, "Parabéns, você pegou um ("..poke..")!")
-		addEvent(doPlayerSendTextMessage, 3000, cid, 27, "Como você já está segurando seis pokemons, esta pokebola foi enviada para o seu depósito.")
+		addEvent(doPlayerSendTextMessage, 3000, cid, 27, "Parabï¿½ns, vocï¿½ pegou um ("..poke..")!")
+		addEvent(doPlayerSendTextMessage, 3000, cid, 27, "Como vocï¿½ jï¿½ estï¿½ segurando seis pokemons, esta pokebola foi enviada para o seu depï¿½sito.")
 		if string.find(poke, "Shiny") then 
 		    db.executeQuery("UPDATE player_catchs SET pokemon_id = '".. poke .."', player_name = '".. getCreatureName(cid) .."' WHERE id = '1';")
 		end
 	else  
 		addPokeInFreeBag(getPlayerSlotItem(cid, 3).uid, item) 
-	    addEvent(doPlayerSendTextMessage, 3000, cid, 27, "Parabéns, você pegou um ("..poke..")!")
+	    addEvent(doPlayerSendTextMessage, 3000, cid, 27, "Parabï¿½ns, vocï¿½ pegou um ("..poke..")!")
 		if string.find(poke, "Shiny") then 
 		    db.executeQuery("UPDATE player_catchs SET pokemon_id = '".. poke .."', player_name = '".. getCreatureName(cid) .."' WHERE id = '1';")
 		end
