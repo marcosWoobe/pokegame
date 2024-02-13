@@ -396,7 +396,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 
 		
 		
-		if math.random() >= pokeChance then
+		if math.random() <= pokeChance then
 
 			local storage = newpokedexCatchXpMasterx[name].stoCatch 	
 			local XPCATCH = newpokedexCatchXpMasterx[name].expCatch

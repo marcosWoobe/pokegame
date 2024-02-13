@@ -316,7 +316,7 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 
         -- doPlayerSendTextMessage(cid, 27, "playerPoints: "..playerPoints)
         -- doPlayerSendTextMessage(cid, 27, "finalRand: "..finalRand)
-        if math.random() >= pokeChance then
+        if math.random() <= pokeChance then
             doSendMagicEffect(topos, catch)
             addEvent(doCapturePokemon, 3000, cid, name, newid, nil, typeee, clevel) 
 
