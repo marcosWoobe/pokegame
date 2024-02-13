@@ -555,7 +555,7 @@ pokesMasterX = {
 	
 	['Pikachu'] = {offense = 0.7, defense = 5.4, specialattack = 3.2, life = 1400, vitality = 3.4, agility = 200, exp = 450, level = 35, wildLvl = 1, type = 'electric', type2 = 'no type'},
 	
-	['Raichu'] = {offense = 1.5, defense = 8, specialattack = 8.5, life = 2200, vitality = 7.7, agility = 220, exp = 200, level = 75, wildLvl = 1, type = 'electric', type2 = 'no type'},
+	['Raichu'] = {offense = 1.5, defense = 8, specialattack = 8.5, life = 2200, vitality = 7.7, agility = 220, exp = 150, level = 75, wildLvl = 1, type = 'electric', type2 = 'no type'},
 	
 	['Shiny Raichu'] = {offense = 1.5, defense = 8, specialattack = 10, life = 2200, vitality = 7.7, agility = 220, exp = 1500, level = 100, wildLvl = 5, type = 'electric', type2 = 'no type'},
 
@@ -640,7 +640,7 @@ pokesMasterX = {
 --// ALL'S POKÉMONS HIGH LEVEL \\--
 	['Magmar'] = {offense = 1.5, defense = 8.3, specialattack = 8.7, life = 2500, vitality = 10, agility = 200, exp = 1800, level = 90, wildLvl = 1, type = 'fire', type2 = 'no type'},
 	
-	['Electabuzz'] = {offense = 1.5, defense = 8.3, specialattack = 8.7, life = 2500, vitality = 10, agility = 200, exp = 300, level = 90, wildLvl = 1, type = 'electric', type2 = 'no type'},
+	['Electabuzz'] = {offense = 1.5, defense = 8.3, specialattack = 8.7, life = 2500, vitality = 10, agility = 200, exp = 150, level = 90, wildLvl = 1, type = 'electric', type2 = 'no type'},
 	
 	['Scyther'] = {offense = 2.1, defense = 8.2, specialattack = 7, life = 2500, vitality = 10.4, agility = 250, exp = 1800, level = 90, wildLvl = 1, type = 'bug', type2 = 'flying'},
 
