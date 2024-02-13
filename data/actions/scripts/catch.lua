@@ -287,7 +287,6 @@ function doSendPokeBall(cid, catchinfo, showmsg, fullmsg, typeee) --Edited broke
 
         pokeTabMedia = pokeTab.media
         if string.find(name, "Shiny") then
-            pokeTabMedia = pokeTab.media * 3
         end
         
         local tablert = { -- typeee para type normal
