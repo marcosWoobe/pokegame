@@ -385,13 +385,13 @@ pokeChance = {
 	["Lucario"] = {media = 731, balltype = "ultraball", minBallType = "pokeball"},
 	
 -- Shinys
-	["Shiny Abra"] = {media = 50, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Abra"] = {media = 100, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Alakazam"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Venusaur"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Charizard"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Blastoise"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Butterfree"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Beedrill"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Butterfree"] = {media = 80, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Beedrill"] = {media = 80, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Pidgeot"] = {media = 280, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Rattata"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Raticate"] = {media = 150, balltype = "ultraball", minBallType = "pokeball"},
@@ -401,7 +401,7 @@ pokeChance = {
 	["Shiny Oddish"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Paras"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Parasect"] = {media = 150, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Venonat"] = {media = 60, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Venonat"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Venomoth"] = {media = 250, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Growlithe"] = {media = 150, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Arcanine"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
@@ -409,10 +409,10 @@ pokeChance = {
 	["Shiny Tentacruel"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Farfetch'd"] = {media = 175, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Grimer"] = {media = 65, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Muk"] = {media = 220, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Muk"] = {media = 250, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Gengar"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Tauros"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Krabby"] = {media = 35, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Krabby"] = {media = 40, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Kingler"] = {media = 230, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Voltorb"] = {media = 35, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Electrode"] = {media = 150, balltype = "ultraball", minBallType = "pokeball"},
@@ -420,19 +420,19 @@ pokeChance = {
 	["Shiny Marowak"] = {media = 250, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Tangela"] = {media = 250, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Horsea"] = {media = 58, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Seadra"] = {media = 85, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Scyther"] = {media = 550, balltype = "saffariball", minBallType = "pokeball"},
+	["Shiny Seadra"] = {media = 90, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Scyther"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Jynx"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Electabuzz"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Pinsir"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Magikarp"] = {media = 56, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Magikarp"] = {media = 45, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Giant Magikarp"] = {media = 150, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Gyarados"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Snorlax"] = {media = 600, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Snorlax"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Dratini"] = {media = 95, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Dragonair"] = {media = 150, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Dragonite"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Mr. Mime"] = {media = 425, balltype = "saffariball", minBallType = "pokeball"},
+	["Shiny Dragonite"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Mr. Mime"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Weezing"] = {media = 170, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Sandslash"] = {media = 170, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Magmar"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},
@@ -442,16 +442,16 @@ pokeChance = {
 	["Shiny Tyranitar"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},	
 	["Shiny Sudowoodo"] = {media = 425, balltype = "ultraball", minBallType = "pokeball"},	
 	-- Shinys Cyber --
-	["Shiny Rhydon"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Onix"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Ninetales"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Magneton"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Dodrio"] = {media = 700, balltype = "saffariball", minBallType = "pokeball"},
-	["Shiny Ariados"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Espeon"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Umbreon"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},	
-	["Shiny Stantler"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
-	["Shiny Politoed"] = {media = 700, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Rhydon"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Onix"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Ninetales"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Magneton"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Dodrio"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Ariados"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Espeon"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Umbreon"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},	
+	["Shiny Stantler"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
+	["Shiny Politoed"] = {media = 450, balltype = "ultraball", minBallType = "pokeball"},
 	-- Shinys 2 GENRATION
 	["Shiny Meganium"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
 	["Shiny Feraligatr"] = {media = 325, balltype = "ultraball", minBallType = "pokeball"},
@@ -555,7 +555,7 @@ pokesMasterX = {
 	
 	['Pikachu'] = {offense = 0.7, defense = 5.4, specialattack = 3.2, life = 1400, vitality = 3.4, agility = 200, exp = 450, level = 35, wildLvl = 1, type = 'electric', type2 = 'no type'},
 	
-	['Raichu'] = {offense = 1.5, defense = 8, specialattack = 8.5, life = 2200, vitality = 7.7, agility = 220, exp = 1500, level = 75, wildLvl = 1, type = 'electric', type2 = 'no type'},
+	['Raichu'] = {offense = 1.5, defense = 8, specialattack = 8.5, life = 2200, vitality = 7.7, agility = 220, exp = 200, level = 75, wildLvl = 1, type = 'electric', type2 = 'no type'},
 	
 	['Shiny Raichu'] = {offense = 1.5, defense = 8, specialattack = 10, life = 2200, vitality = 7.7, agility = 220, exp = 1500, level = 100, wildLvl = 5, type = 'electric', type2 = 'no type'},
 
@@ -640,7 +640,7 @@ pokesMasterX = {
 --// ALL'S POKÉMONS HIGH LEVEL \\--
 	['Magmar'] = {offense = 1.5, defense = 8.3, specialattack = 8.7, life = 2500, vitality = 10, agility = 200, exp = 1800, level = 90, wildLvl = 1, type = 'fire', type2 = 'no type'},
 	
-	['Electabuzz'] = {offense = 1.5, defense = 8.3, specialattack = 8.7, life = 2500, vitality = 10, agility = 200, exp = 1800, level = 90, wildLvl = 1, type = 'electric', type2 = 'no type'},
+	['Electabuzz'] = {offense = 1.5, defense = 8.3, specialattack = 8.7, life = 2500, vitality = 10, agility = 200, exp = 300, level = 90, wildLvl = 1, type = 'electric', type2 = 'no type'},
 	
 	['Scyther'] = {offense = 2.1, defense = 8.2, specialattack = 7, life = 2500, vitality = 10.4, agility = 250, exp = 1800, level = 90, wildLvl = 1, type = 'bug', type2 = 'flying'},
 
@@ -816,7 +816,7 @@ pokesMasterX = {
 	
 	['Machoke'] = {offense = 3, defense = 7.2, specialattack = 5, life = 1800, vitality = 6.9, agility = 190, exp = 450, level = 45, wildLvl = 1, type = 'fighting', type2 = 'no type'},	
 	
-	['Machamp'] = {offense = 4, defense = 7.8, specialattack = 8, life = 2400, vitality = 9.8, agility = 200, exp = 1800, level = 80, wildLvl = 1, type = 'fighting', type2 = 'no type'},
+	['Machamp'] = {offense = 4, defense = 7.8, specialattack = 8, life = 2400, vitality = 9.8, agility = 200, exp = 400, level = 80, wildLvl = 1, type = 'fighting', type2 = 'no type'},
 	
 	['Shiny Machamp'] = {offense = 3, defense = 7.8, specialattack = 8, life = 2400, vitality = 9.8, agility = 200, exp = 1800, level = 100, wildLvl = 5, type = 'fighting', type2 = 'no type'},
 

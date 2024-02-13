@@ -45,22 +45,22 @@ local function playerAddExp(cid, exp)
 end
 
 local Exps = { 
-    {minL = 1, maxL = 25, multipler = 30}, 
-    {minL = 26, maxL = 50, multipler = 28},
-    {minL = 51, maxL = 75, multipler = 26},    
-    {minL = 76, maxL = 100, multipler = 24},        
-    {minL = 101, maxL = 125, multipler = 22},
-    {minL = 126, maxL = 150, multipler = 20}, 
-    {minL = 151, maxL = 175, multipler = 18},
-    {minL = 176, maxL = 200, multipler = 16},
-    {minL = 201, maxL = 225, multipler = 14}, 
-    {minL = 226, maxL = 250, multipler = 12},
-    {minL = 251, maxL = 275, multipler = 10},
-    {minL = 276, maxL = 300, multipler = 8},    
-    {minL = 301, maxL = 325, multipler = 6}, 
-    {minL = 326, maxL = 350, multipler = 4},
-    {minL = 351, maxL = 375, multipler = 2},    
-    {minL = 376, maxL = 400, multipler = 1}, 
+    {minL = 1, maxL = 25, multipler =  5},
+    {minL = 26, maxL = 50, multipler =  5},
+    {minL = 51, maxL = 75, multipler =  5},
+    {minL = 76, maxL = 100, multipler =  5},
+    {minL = 101, maxL = 125, multipler =  5},
+    {minL = 126, maxL = 150, multipler =  5},
+    {minL = 151, maxL = 175, multipler =  5},
+    {minL = 176, maxL = 200, multipler =  5},
+    {minL = 201, maxL = 225, multipler =  5},
+    {minL = 226, maxL = 250, multipler =  5},
+    {minL = 251, maxL = 275, multipler =  5},
+    {minL = 276, maxL = 300, multipler = 5},
+    {minL = 301, maxL = 325, multipler = 5},
+    {minL = 326, maxL = 350, multipler = 5},
+    {minL = 351, maxL = 375, multipler = 5},
+    {minL = 376, maxL = 400, multipler = 5},
 }
 
 local function calculaExp(cid, expTotal)
