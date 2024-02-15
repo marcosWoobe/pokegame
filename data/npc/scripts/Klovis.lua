@@ -34,7 +34,7 @@ function creatureSayCallback(cid, type, msg)
             talkState[talkUser] = 0
             return true
         end
-        selfSay("Hello my friend, can you bring to me: 70 Magma Foot, 600 Essence of fire, 200 Pot of Lava ? I will reward you!",cid)
+        selfSay("EAI GUFFS SEU OTARIO, VC TEM QUE TRAZER: 70 Magma Foot, 600 Essence of fire, 200 Pot of Lava! SEU BURRO DO CARALEO",cid)
         talkState[talkUser] = 1
         return true 
     elseif msgcontains(msg, 'yes') or msgcontains(msg, 'sim') and talkState[talkUser] == 1 then
