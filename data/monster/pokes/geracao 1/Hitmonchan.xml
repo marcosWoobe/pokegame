@@ -32,7 +32,7 @@
     <loot>
         <item id="11446" chance="15" count="1" countmax="1"/> <!-- punch stone -->
         <item id="17346" chance="80" countmax="30"/> <!-- band aid -->	
-        <item id="12191" chance="20" count="1" countmax="1"/> -- punch machine
+        <item id="12191" chance="80" count="1" countmax="1"/> -- punch machine
 		<item id="17305" chance="35" count="1"/> <!-- spin machine -->	
 		<item id="2345" chance="25" count="1"/> <!-- martial scrolls -->
     </loot>
